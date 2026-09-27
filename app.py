@@ -27,10 +27,6 @@ def sanitize_for_json(obj):
 def index():
     return render_template("index.html")
 
-@app.route("/stitch_screens/<path:filename>")
-def serve_stitch_screens(filename):
-    return send_from_directory("stitch_screens", filename)
-
 @app.route("/api/portfolio", methods=["GET"])
 def get_portfolio():
     try:
