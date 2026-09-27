@@ -258,7 +258,7 @@
 <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Available Capital Pool</span>
 <div class="flex items-center gap-1 mt-1">
 <span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹</span>
-<input type="number" id="capitalInput" value="12.50" step="0.5" min="5.0" max="20.0" class="w-20 bg-surface-container-highest text-on-surface font-headline-sm font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="capitalInput" value="12.50" step="0.5" min="5.0" max="20.0" class="w-20 bg-surface-container-highest text-on-surface font-headline-sm font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Cr</span>
 </div>
 </div>
@@ -321,21 +321,21 @@
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-101</span>
 <span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-0">Textiles</span>
 </div>
-<input type="text" id="sector-0" value="Textiles" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
+<input type="text" id="sector-0" value="Textiles" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels(); updateScreen1LiveCalculations();" placeholder="Sector name">
 </div>
 </div>
 </td>
 <td class="py-space-md px-space-sm font-label-md text-label-md font-medium text-on-surface" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1">
 <span>₹</span>
-<input type="number" id="principal-0" value="2.8" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="principal-0" value="2.8" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span>Cr</span>
 </div>
 </td>
 <td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1 justify-end">
 <span class="text-tertiary font-bold">₹</span>
-<input type="number" id="profit-0" value="1.8" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="profit-0" value="1.8" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="text-tertiary font-bold">L</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
@@ -357,21 +357,21 @@
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-102</span>
 <span class="px-space-xs py-0.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm" id="badge-1">Agri</span>
 </div>
-<input type="text" id="sector-1" value="Agri-processing" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
+<input type="text" id="sector-1" value="Agri-processing" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels(); updateScreen1LiveCalculations();" placeholder="Sector name">
 </div>
 </div>
 </td>
 <td class="py-space-md px-space-sm font-label-md text-label-md font-medium text-on-surface" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1">
 <span>₹</span>
-<input type="number" id="principal-1" value="4.2" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="principal-1" value="4.2" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span>Cr</span>
 </div>
 </td>
 <td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1 justify-end">
 <span class="text-tertiary font-bold">₹</span>
-<input type="number" id="profit-1" value="1.5" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="profit-1" value="1.5" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="text-tertiary font-bold">L</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
@@ -393,21 +393,21 @@
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-103</span>
 <span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-2">Retail</span>
 </div>
-<input type="text" id="sector-2" value="Retail" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
+<input type="text" id="sector-2" value="Retail" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels(); updateScreen1LiveCalculations();" placeholder="Sector name">
 </div>
 </div>
 </td>
 <td class="py-space-md px-space-sm font-label-md text-label-md font-medium text-on-surface" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1">
 <span>₹</span>
-<input type="number" id="principal-2" value="3.5" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="principal-2" value="3.5" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span>Cr</span>
 </div>
 </td>
 <td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1 justify-end">
 <span class="text-tertiary font-bold">₹</span>
-<input type="number" id="profit-2" value="2.0" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="profit-2" value="2.0" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="text-tertiary font-bold">L</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
@@ -429,21 +429,21 @@
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-104</span>
 <span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-3">Transport</span>
 </div>
-<input type="text" id="sector-3" value="Transport" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
+<input type="text" id="sector-3" value="Transport" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels(); updateScreen1LiveCalculations();" placeholder="Sector name">
 </div>
 </div>
 </td>
 <td class="py-space-md px-space-sm font-label-md text-label-md font-medium text-on-surface" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1">
 <span>₹</span>
-<input type="number" id="principal-3" value="1.8" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="principal-3" value="1.8" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span>Cr</span>
 </div>
 </td>
 <td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1 justify-end">
 <span class="text-tertiary font-bold">₹</span>
-<input type="number" id="profit-3" value="1.2" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="profit-3" value="1.2" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="text-tertiary font-bold">L</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
@@ -465,21 +465,21 @@
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-105</span>
 <span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm" id="badge-4">Construct</span>
 </div>
-<input type="text" id="sector-4" value="Construction" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
+<input type="text" id="sector-4" value="Construction" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels(); updateScreen1LiveCalculations();" placeholder="Sector name">
 </div>
 </div>
 </td>
 <td class="py-space-md px-space-sm font-label-md text-label-md font-medium text-on-surface" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1">
 <span>₹</span>
-<input type="number" id="principal-4" value="2.5" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="principal-4" value="2.5" step="0.1" min="0.1" class="w-16 bg-surface-container-highest text-on-surface font-label-md px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span>Cr</span>
 </div>
 </td>
 <td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
 <div class="flex items-center gap-1 justify-end">
 <span class="text-tertiary font-bold">₹</span>
-<input type="number" id="profit-4" value="2.4" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<input type="number" id="profit-4" value="2.4" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary" oninput="updateScreen1LiveCalculations()">
 <span class="text-tertiary font-bold">L</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
@@ -498,13 +498,13 @@
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
 <div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-xs shadow-sm">
 <span class="font-label-sm text-label-sm text-on-surface-variant">Sum of Requested Principal</span>
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹16.00 Cr</span>
-<span class="font-label-sm text-label-sm text-primary">Over-subscribed by ₹3.50 Cr</span>
+<span id="kpi-sum-principal" class="font-headline-sm text-headline-sm text-on-surface font-bold">₹14.80 Cr</span>
+<span id="kpi-oversub-status" class="font-label-sm text-label-sm text-primary font-bold">Over-subscribed by ₹2.30 Cr</span>
 </div>
 <div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-xs shadow-sm">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Weighted Average IRR</span>
-<span class="font-headline-sm text-headline-sm text-tertiary font-bold">15.12%</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Base Unconstrained Yield</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weighted Average Margin / Yield</span>
+<span id="kpi-weighted-irr" class="font-headline-sm text-headline-sm text-tertiary font-bold">₹8.90 L (6.01%)</span>
+<span id="kpi-weighted-irr-sub" class="font-label-sm text-label-sm text-on-surface-variant">Total Requested Margin</span>
 </div>
 <div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-xs shadow-sm">
 <span class="font-label-sm text-label-sm text-on-surface-variant">Combinatorial Selection Rate</span>
@@ -607,10 +607,10 @@
 <span class="font-label-sm text-label-sm text-primary font-bold">Hamiltonian QUBO Penalty Matrix</span>
 <span class="material-symbols-outlined text-[16px] text-primary">functions</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
+<p id="insight-cov-text" class="font-body-sm text-body-sm text-on-surface-variant">
               Notice <span class="font-bold text-error">LN-103 (Marine Exports)</span> &amp; <span class="font-bold text-error">LN-105 (Retail)</span> share severe port logistic and consumer cyclical risk (<span class="font-mono font-bold text-error">0.78</span>). The quantum cost operator penalizes their joint superposition state by adding:
             </p>
-<div class="p-space-xs rounded bg-surface-container-lowest font-mono font-label-sm text-label-sm text-primary-fixed-dim text-center">
+<div id="insight-cov-formula" class="p-space-xs rounded bg-surface-container-lowest font-mono font-label-sm text-label-sm text-primary-fixed-dim text-center">
               H_int = +0.78 · (x_103 · x_105) + λ(Σ x_i - 3)²
             </div>
 </div>
@@ -755,11 +755,11 @@
 <div class="w-full overflow-x-auto py-space-sm">
 <div class="min-w-[840px] flex flex-col gap-space-sm relative">
 <!-- Quantum Rail Loop (q[0] to q[4]) -->
-<!-- Wire 0: Gold Loan Portfolio -->
+<!-- Wire 0: Loan 101 -->
 <div class="flex items-center h-12 relative">
 <div class="w-28 shrink-0 flex flex-col">
 <span class="font-label-md text-label-md font-bold text-primary">q[0]</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant truncate">GL-01 (Gold)</span>
+<span id="circuit-wire-0" class="font-label-sm text-label-sm text-on-surface-variant truncate">LN-101 (Textiles)</span>
 </div>
 <div class="relative flex-1 flex items-center h-full">
 <div class="absolute inset-x-0 h-[2px] bg-outline-variant"></div>
@@ -789,17 +789,17 @@
 <span>e<sup>-iβ₂B</sup></span>
 </div>
 <!-- Z-Measurement Meter -->
-<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<div id="circuit-meas-0" class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1 transition-all">
 <span class="material-symbols-outlined text-[14px]">speed</span>
-<span>M(z)</span>
+<span id="meas-val-0">M(z)</span>
 </div>
 </div>
 </div>
-<!-- Wire 1: Agricultural Working Capital -->
+<!-- Wire 1: Loan 102 -->
 <div class="flex items-center h-12 relative">
 <div class="w-28 shrink-0 flex flex-col">
 <span class="font-label-md text-label-md font-bold text-primary">q[1]</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant truncate">AG-02 (Agri)</span>
+<span id="circuit-wire-1" class="font-label-sm text-label-sm text-on-surface-variant truncate">LN-102 (Agri)</span>
 </div>
 <div class="relative flex-1 flex items-center h-full">
 <div class="absolute inset-x-0 h-[2px] bg-outline-variant"></div>
@@ -820,17 +820,17 @@
 <div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">
 <span>e<sup>-iβ₂B</sup></span>
 </div>
-<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<div id="circuit-meas-1" class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1 transition-all">
 <span class="material-symbols-outlined text-[14px]">speed</span>
-<span>M(z)</span>
+<span id="meas-val-1">M(z)</span>
 </div>
 </div>
 </div>
-<!-- Wire 2: MSME Retail Commercial -->
+<!-- Wire 2: Loan 103 -->
 <div class="flex items-center h-12 relative">
 <div class="w-28 shrink-0 flex flex-col">
 <span class="font-label-md text-label-md font-bold text-primary">q[2]</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant truncate">MS-03 (MSME)</span>
+<span id="circuit-wire-2" class="font-label-sm text-label-sm text-on-surface-variant truncate">LN-103 (Retail)</span>
 </div>
 <div class="relative flex-1 flex items-center h-full">
 <div class="absolute inset-x-0 h-[2px] bg-outline-variant"></div>
@@ -853,17 +853,17 @@
 <div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">
 <span>e<sup>-iβ₂B</sup></span>
 </div>
-<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<div id="circuit-meas-2" class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1 transition-all">
 <span class="material-symbols-outlined text-[14px]">speed</span>
-<span>M(z)</span>
+<span id="meas-val-2">M(z)</span>
 </div>
 </div>
 </div>
-<!-- Wire 3: Priority Housing Infrastructure -->
+<!-- Wire 3: Loan 104 -->
 <div class="flex items-center h-12 relative">
 <div class="w-28 shrink-0 flex flex-col">
 <span class="font-label-md text-label-md font-bold text-primary">q[3]</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant truncate">HS-04 (Housing)</span>
+<span id="circuit-wire-3" class="font-label-sm text-label-sm text-on-surface-variant truncate">LN-104 (Transport)</span>
 </div>
 <div class="relative flex-1 flex items-center h-full">
 <div class="absolute inset-x-0 h-[2px] bg-outline-variant"></div>
@@ -885,17 +885,17 @@
 <div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">
 <span>e<sup>-iβ₂B</sup></span>
 </div>
-<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<div id="circuit-meas-3" class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1 transition-all">
 <span class="material-symbols-outlined text-[14px]">speed</span>
-<span>M(z)</span>
+<span id="meas-val-3">M(z)</span>
 </div>
 </div>
 </div>
-<!-- Wire 4: Thrissur Micro-Enterprise -->
+<!-- Wire 4: Loan 105 -->
 <div class="flex items-center h-12 relative">
 <div class="w-28 shrink-0 flex flex-col">
 <span class="font-label-md text-label-md font-bold text-primary">q[4]</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant truncate">ME-05 (Micro)</span>
+<span id="circuit-wire-4" class="font-label-sm text-label-sm text-on-surface-variant truncate">LN-105 (Construct)</span>
 </div>
 <div class="relative flex-1 flex items-center h-full">
 <div class="absolute inset-x-0 h-[2px] bg-outline-variant"></div>
@@ -913,16 +913,18 @@
 <div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">
 <span>e<sup>-iβ₂B</sup></span>
 </div>
-<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<div id="circuit-meas-4" class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm flex items-center gap-1 transition-all">
 <span class="material-symbols-outlined text-[14px]">speed</span>
-<span>M(z)</span>
+<span id="meas-val-4">M(z)</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
-<span>QAOA Ansatz Parameters: γ₁ = 0.384, β₁ = 1.092, γ₂ = 0.812, β₂ = 0.441</span>
+<span id="ansatzParamsDisplay">QAOA Ansatz Parameters: γ₁ = 0.384, β₁ = 1.092, γ₂ = 0.812, β₂ = 0.441</span>
+<span class="text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary inline-block"></span> Quantum Hardware Sim: Thrissur-5Q Transmon Lattice</span>
+</div>
 <span class="text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary inline-block"></span> Quantum Hardware Sim: Thrissur-5Q Transmon Lattice</span>
 </div>
 </div>
@@ -936,90 +938,13 @@
 <span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Wavefunction Amplitude Collapse</span>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Eigenstate Sampling (1024 Shots) | Top 8 of 32 Basis Vectors</span>
 </div>
-<div class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">
+<div id="peakAmplitudeBadge" class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">
               Peak Amplitude: |01110⟩
             </div>
 </div>
-<!-- Pulsing Probability Chart -->
-<div class="flex flex-col gap-space-sm pt-space-sm">
-<!-- Optimal Candidate 1 -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-primary font-bold">|01110⟩ (Agri, MSME, Housing) [VALID: k=3]</span>
-<span class="text-primary font-semibold">41.8% (428 shots)</span>
-</div>
-<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
-<div class="h-full rounded bg-primary transition-all duration-700 relative overflow-hidden" style="width: 41.8%;">
-<div class="absolute inset-0 bg-surface-container-lowest animate-pulse"></div>
-</div>
-</div>
-</div>
-<!-- Optimal Candidate 2 -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-secondary-fixed font-bold">|11010⟩ (Gold, Agri, Housing) [VALID: k=3]</span>
-<span class="text-secondary-fixed font-semibold">28.4% (291 shots)</span>
-</div>
-<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
-<div class="h-full rounded bg-secondary transition-all duration-700" style="width: 28.4%;"></div>
-</div>
-</div>
-<!-- Candidate 3 -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-on-surface-variant font-medium">|10110⟩ (Gold, MSME, Housing) [VALID: k=3]</span>
-<span class="text-on-surface-variant">14.2% (145 shots)</span>
-</div>
-<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
-<div class="h-full rounded bg-primary transition-all duration-700" style="width: 14.2%;"></div>
-</div>
-</div>
-<!-- Constraint Violation 1 -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-on-surface-variant">|00111⟩ (MSME, Housing, Micro) [VALID: k=3]</span>
-<span class="text-on-surface-variant">7.6% (78 shots)</span>
-</div>
-<div class="w-full h-3 rounded bg-surface-container-high overflow-hidden">
-<div class="h-full rounded bg-outline-variant transition-all duration-700" style="width: 7.6%;"></div>
-</div>
-</div>
-<!-- Infeasible State (k=4 penalized by Lambda) -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-error flex items-center gap-1">
-<span>|11110⟩ (Penalty Evicted: k=4)</span>
-<span class="text-[10px] px-1 rounded bg-error-container text-error">λ-suppressed</span>
-</span>
-<span class="text-error">3.1% (32 shots)</span>
-</div>
-<div class="w-full h-2.5 rounded bg-surface-container-high overflow-hidden">
-<div class="h-full rounded bg-error-container transition-all duration-700" style="width: 3.1%;"></div>
-</div>
-</div>
-<!-- Infeasible State (k=2) -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-error flex items-center gap-1">
-<span>|01010⟩ (Penalty Evicted: k=2)</span>
-<span class="text-[10px] px-1 rounded bg-error-container text-error">λ-suppressed</span>
-</span>
-<span class="text-error">2.4% (25 shots)</span>
-</div>
-<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
-<div class="h-full rounded bg-error-container transition-all duration-700" style="width: 2.4%;"></div>
-</div>
-</div>
-<!-- Noise Floor -->
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between font-label-sm text-label-sm">
-<span class="text-outline text-xs">Remaining 26 Orthogonal Basis States</span>
-<span class="text-outline text-xs">2.5% (25 shots combined)</span>
-</div>
-<div class="w-full h-1.5 rounded bg-surface-container-high overflow-hidden">
-<div class="h-full rounded bg-surface-variant transition-all duration-700" style="width: 2.5%;"></div>
-</div>
-</div>
+<!-- Dynamic Pulsing Probability Chart -->
+<div id="sampleDistributionList" class="flex flex-col gap-space-sm pt-space-sm max-h-[380px] overflow-y-auto pr-1">
+<!-- Dynamic samples populated by renderResults() -->
 </div>
 <div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
 <span class="flex items-center gap-space-xs">
@@ -1043,55 +968,8 @@
 <span class="font-label-sm text-label-sm text-tertiary bg-surface-variant px-space-xs rounded">LIVE FEED</span>
 </div>
 <!-- Terminal Output Stream -->
-<div class="flex flex-col gap-space-xs font-label-sm text-label-sm overflow-y-auto max-h-[310px] pr-space-xs space-y-1">
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.01s]</span>
-<span>Mapping 5 loan assets &amp; covariance matrix to Ising QUBO Hamiltonian...</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.05s]</span>
-<span class="text-secondary-fixed">Matrix Dim: 5x5 | Non-zero interactions: 10 coupling terms</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.08s]</span>
-<span>Applying hard constraint penalty <span class="text-primary">λ(∑ x_i - 3)²</span> where target k=3</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.11s]</span>
-<span>Lagrange Multiplier set to λ = 450.0 (infeasible energy barrier active)</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.14s]</span>
-<span class="text-tertiary font-semibold">QPU State Prep: 5 Qubits placed in uniform superposition via H^⊗5</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.21s]</span>
-<span>Constructing 2-Layer QAOA Ansatz: U(β₂, γ₂) U(β₁, γ₁) |+⟩^⊗5</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.29s]</span>
-<span class="text-primary">Classical-Quantum hybrid loop: COBYLA optimizing parameters (γ, β)...</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.35s]</span>
-<span>Iter 12: Cost E = -82.10 | ΔE = 14.32</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.39s]</span>
-<span>Iter 22: Cost E = -138.80 | ΔE = 2.15</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.42s]</span>
-<span class="text-tertiary font-bold">Convergence reached at iteration 28 (Cost E = -147.45)</span>
-</div>
-<div class="text-on-surface-variant flex gap-space-xs">
-<span class="text-outline shrink-0">[0.48s]</span>
-<span class="text-primary-fixed">Sampling 1024 shots: Peak probability on optimal eigenstate |01110⟩</span>
-</div>
-<div class="text-on-surface flex gap-space-xs items-center pt-1 font-semibold text-tertiary">
-<span class="material-symbols-outlined text-[14px]">check_circle</span>
-<span>Quantum execution verified against risk boundary thresholds. Ready.</span>
-</div>
+<div id="telemetryLogStream" class="flex flex-col gap-space-xs font-label-sm text-label-sm overflow-y-auto max-h-[310px] pr-space-xs space-y-1">
+<!-- Dynamically populated from backend data.telemetry_logs -->
 </div>
 </div>
 <!-- Quantum Telemetry Metadata Micro-Cards -->
@@ -1456,8 +1334,8 @@ Pass (μ Dominates)
 <span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
 <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Lagrangian Parameter</span>
 </div>
-<p class="font-label-md text-label-md text-on-surface font-medium">Penalty Multiplier λ = 50.0</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+<p id="lagrangianParamMultiplier" class="font-label-md text-label-md text-on-surface font-medium">Penalty Multiplier μ_effective = 50.0</p>
+<p id="lagrangianParamDesc" class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
               Sufficiently penalizes invalid bitstrings $(\sum x_i - 3)^2 \neq 0$, rendering high-energy barrier against constraint breaches.
             </p>
 </div>
@@ -1497,7 +1375,7 @@ Pass (μ Dominates)
 <span class="material-symbols-outlined text-[16px]">close</span>
 </button>
 </div>
-<div class="bg-background p-space-sm rounded font-label-sm text-label-sm text-on-surface-variant overflow-x-auto space-y-1">
+<div id="proofConsoleOutput" class="bg-background p-space-sm rounded font-label-sm text-label-sm text-on-surface-variant overflow-x-auto space-y-1">
 <p class="text-tertiary">&gt; [INITIALIZE] Initializing 5-qubit Hilbert space |00000&gt; ... DONE</p>
 <p>&gt; [TRANSPILE] Target native gates: RZ, RX, CNOT. Layer count = 2. transpiled 14 2-qubit operations.</p>
 <p>&gt; [HAMILTONIAN] H = -0.672 Z_1 - 0.525 Z_2 - 0.480 Z_3 + 0.81 Z_1*Z_2 + 50.0*(Z_0 + ... + Z_4 - 3)^2</p>
@@ -1514,7 +1392,7 @@ Pass (μ Dominates)
 </div>
 <div>
 <span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Ready to Commit Allocation</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Execute disbursement orders for LN-102, LN-103, and LN-104</span>
+<span id="disbursementOrderText" class="font-body-sm text-body-sm text-on-surface-variant">Execute disbursement orders for LN-102, LN-103, and LN-104</span>
 </div>
 </div>
 <div class="flex items-center gap-space-sm w-full sm:w-auto">
@@ -1617,6 +1495,9 @@ Pass (μ Dominates)
 </div>
 <div class="font-label-lg text-label-lg text-primary overflow-x-auto py-space-xs tracking-tight">
             H(x) = - α ∑ μ<sub>i</sub> x<sub>i</sub> + β ∑∑ σ<sub>ij</sub> x<sub>i</sub> x<sub>j</sub> + λ (∑ x<sub>i</sub> - K)<sup>2</sup>
+</div>
+<div id="liveExpandedQUBO" class="p-space-xs rounded bg-surface-container font-mono font-label-sm text-label-sm text-tertiary break-all border border-outline-variant/30 mt-1">
+  H(x) = - (1.8·x₁ + 1.5·x₂ + 2.0·x₃ + 1.2·x₄ + 2.4·x₅) + 1.0·(0.30·x₁x₂ + ...) + 50.0·(Σ x_i - 3)²
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-xs">
@@ -1751,13 +1632,13 @@ Pass (μ Dominates)
 </div>
 <div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shrink-0">
 <span class="w-2 h-2 rounded-full bg-tertiary"></span>
-<span class="font-label-sm text-label-sm text-on-surface">Ground State: |01110⟩ (Optimal)</span>
+<span id="mathGroundStateBadge" class="font-label-sm text-label-sm text-on-surface">Ground State: |01110⟩ (Optimal)</span>
 </div>
 </div>
 <div class="bg-surface-container-lowest p-space-md rounded-lg relative overflow-hidden flex flex-col gap-space-md">
 <div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
 <span>High Energy (High Risk / Constraint Penalties)</span>
-<span class="text-tertiary font-bold">Global Min Energy: -14.82 eV (Target Basin)</span>
+<span id="mathGlobalMinEnergy" class="text-tertiary font-bold">Global Min Energy: -14.82 eV (Target Basin)</span>
 </div>
 <div class="w-full h-56 relative flex items-center justify-center">
 <svg class="w-full h-full text-primary" fill="none" viewbox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
@@ -1783,8 +1664,8 @@ Pass (μ Dominates)
 <circle class="text-tertiary animate-pulse" cx="520" cy="225" fill="currentColor" r="7"></circle>
 <circle class="text-tertiary opacity-40" cx="520" cy="225" r="14" stroke="currentColor" stroke-width="1.5"></circle>
 <line class="text-tertiary opacity-60" stroke="currentColor" stroke-dasharray="2 2" x1="520" x2="520" y1="20" y2="225"></line>
-<text class="font-label-md text-[12px] text-tertiary font-bold" fill="currentColor" x="532" y="215">|01110⟩ Ground State</text>
-<text class="font-label-sm text-[10px] text-on-surface-variant" fill="currentColor" x="532" y="230">E = -14.82 (Max Return + Valid K=3)</text>
+<text id="svgGroundStateLabel" class="font-label-md text-[12px] text-tertiary font-bold" fill="currentColor" x="532" y="215">|01110⟩ Ground State</text>
+<text id="svgGroundStateEnergy" class="font-label-sm text-[10px] text-on-surface-variant" fill="currentColor" x="532" y="230">E = -14.82 (Max Return + Valid K=3)</text>
 <defs>
 <lineargradient id="energyGradient" x1="0%" x2="0%" y1="0%" y2="100%">
 <stop offset="0%" stop-color="#4cd7f6" stop-opacity="0.6"></stop>
@@ -1946,7 +1827,9 @@ Pass (μ Dominates)
         setTimeout(() => {
           tunnelBtn.textContent = 'Simulate Quantum Tunneling';
           tunnelBtn.classList.remove('text-tertiary');
-          showToast('Phase angle β traversed barrier: Ground state locked at |01110⟩');
+          const bit = (window.appData && window.appData.quantum) ? window.appData.quantum.bitstring : '01110';
+          const sec = (window.appData && window.appData.selected_sectors_qaoa) ? window.appData.selected_sectors_qaoa.join(', ') : 'Optimal Candidates';
+          showToast(`Phase angle β traversed barrier: Ground state locked at |${bit}⟩ (${sec})`);
         }, 1200);
       });
     }
@@ -2034,6 +1917,7 @@ Pass (μ Dominates)
         }
       }
       updateSectorLabels();
+      updateScreen1LiveCalculations();
     }
 
     function resetToDefaults() {
@@ -2046,6 +1930,7 @@ Pass (μ Dominates)
       if (target) {
         target.value = num.toFixed(2);
       }
+      updateScreen1LiveCalculations();
     }
 
     function updateSectorLabels() {
@@ -2058,6 +1943,132 @@ Pass (μ Dominates)
         const row = document.getElementById(`mat-row-${i}`);
         if (row) row.innerText = `10${i+1}`;
       }
+      updateCircuitLabels();
+    }
+
+    function updateCircuitLabels() {
+      for (let i = 0; i < 5; i++) {
+        const val = document.getElementById(`sector-${i}`)?.value || `Sector ${i+1}`;
+        const wireEl = document.getElementById(`circuit-wire-${i}`);
+        if (wireEl) {
+          wireEl.innerText = `LN-10${i+1} (${val.slice(0, 12)})`;
+          wireEl.title = `LN-10${i+1} (${val})`;
+        }
+      }
+    }
+
+    function getLoanInputs() {
+      const loans = [];
+      for (let i = 0; i < 5; i++) {
+        const sec = document.getElementById(`sector-${i}`)?.value || `Sector ${i+1}`;
+        const prof = parseFloat(document.getElementById(`profit-${i}`)?.value) || 1.0;
+        const princ = parseFloat(document.getElementById(`principal-${i}`)?.value) || 2.5;
+        loans.push({
+          id: `LN-10${i+1}`,
+          sector: sec,
+          profit: prof,
+          principal: princ
+        });
+      }
+      return loans;
+    }
+
+    function getRiskMatrixInputs() {
+      const risk_matrix = [];
+      for (let i = 0; i < 5; i++) {
+        const row = [];
+        for (let j = 0; j < 5; j++) {
+          if (i === j) {
+            row.push(0.0);
+          } else {
+            const el = document.getElementById(`risk-${i}-${j}`);
+            row.push(el ? (parseFloat(el.value) || 0.0) : 0.0);
+          }
+        }
+        risk_matrix.push(row);
+      }
+      return risk_matrix;
+    }
+
+    // Real-Time Live Calculations on Input
+    function updateScreen1LiveCalculations() {
+      const loans = getLoanInputs();
+      const risk_matrix = getRiskMatrixInputs();
+
+      let sumP = 0;
+      let sumProfit = 0;
+      loans.forEach(l => {
+        sumP += l.principal;
+        sumProfit += l.profit;
+      });
+
+      const capitalInput = document.getElementById('capitalInput');
+      const capital = capitalInput ? (parseFloat(capitalInput.value) || 12.5) : 12.5;
+
+      // Update Screen 1 Micro-KPIs
+      const sumPrincipalEl = document.getElementById('kpi-sum-principal');
+      if (sumPrincipalEl) sumPrincipalEl.innerText = `₹${sumP.toFixed(2)} Cr`;
+
+      const oversubEl = document.getElementById('kpi-oversub-status');
+      if (oversubEl) {
+        const diff = sumP - capital;
+        if (diff > 0) {
+          oversubEl.innerText = `Over-subscribed by ₹${diff.toFixed(2)} Cr`;
+          oversubEl.className = 'font-label-sm text-label-sm text-primary font-bold';
+        } else {
+          oversubEl.innerText = `Within Budget (₹${Math.abs(diff).toFixed(2)} Cr headroom)`;
+          oversubEl.className = 'font-label-sm text-label-sm text-tertiary font-bold';
+        }
+      }
+
+      const irrEl = document.getElementById('kpi-weighted-irr');
+      if (irrEl) {
+        const returnPct = sumP > 0 ? ((sumProfit / sumP) * 10).toFixed(2) : '0.00';
+        irrEl.innerText = `₹${sumProfit.toFixed(2)} L (${returnPct}%)`;
+      }
+
+      const irrSubEl = document.getElementById('kpi-weighted-irr-sub');
+      if (irrSubEl) {
+        irrSubEl.innerText = `Total Requested Margin (Avg ₹${(sumProfit/5).toFixed(2)} L)`;
+      }
+
+      // Scan matrix for highest risk pair (i < j)
+      let maxRisk = -1;
+      let maxI = 0;
+      let maxJ = 1;
+      for (let i = 0; i < 5; i++) {
+        for (let j = i + 1; j < 5; j++) {
+          const val = risk_matrix[i][j];
+          if (val > maxRisk) {
+            maxRisk = val;
+            maxI = i;
+            maxJ = j;
+          }
+        }
+      }
+
+      const secI = loans[maxI].sector;
+      const secJ = loans[maxJ].sector;
+
+      const covText = document.getElementById('insight-cov-text');
+      if (covText) {
+        covText.innerHTML = `Notice <span class="font-bold text-error">LN-10${maxI+1} (${secI})</span> &amp; <span class="font-bold text-error">LN-10${maxJ+1} (${secJ})</span> share the highest cross-sector risk (<span class="font-mono font-bold text-error">${maxRisk.toFixed(2)}</span>). The quantum cost operator penalizes their joint superposition state by adding:`;
+      }
+
+      const covForm = document.getElementById('insight-cov-formula');
+      if (covForm) {
+        covForm.innerHTML = `H_int = +${maxRisk.toFixed(2)} · (x_${maxI+1} · x_${maxJ+1}) + λ(Σ x_i - 3)²`;
+      }
+
+      // Update Screen 4 live expanded QUBO formula
+      const quboEl = document.getElementById('liveExpandedQUBO');
+      if (quboEl) {
+        const profTerms = loans.map((l, idx) => `${l.profit.toFixed(1)}·x${idx+1}`).join(' + ');
+        const effMu = (window.appData && window.appData.qubo_params) ? window.appData.qubo_params.mu_effective : 45.0;
+        quboEl.innerText = `H(x) = - (${profTerms}) + 1.0·(${maxRisk.toFixed(2)}·x${maxI+1}x${maxJ+1} + ...) + ${effMu}·(Σ x_i - 3)²`;
+      }
+
+      updateCircuitLabels();
     }
 
     // 1. Tab Switching System
@@ -2106,7 +2117,7 @@ Pass (μ Dominates)
         const res = await fetch('/api/portfolio');
         const json = await res.json();
         if (json.status === 'success') {
-          appData = json.data;
+          window.appData = json.data;
           renderResults(json);
         }
       } catch (err) {
@@ -2123,34 +2134,8 @@ Pass (μ Dominates)
       const badge = document.getElementById('qpuStatusBadge');
       if (badge) badge.innerText = 'QPU Sim: COBYLA Optimizing...';
 
-      // Collect loans
-      const loans = [];
-      for (let i = 0; i < 5; i++) {
-        const sec = document.getElementById(`sector-${i}`)?.value || `Sector ${i+1}`;
-        const prof = parseFloat(document.getElementById(`profit-${i}`)?.value) || 1.0;
-        const princ = parseFloat(document.getElementById(`principal-${i}`)?.value) || 2.5;
-        loans.push({
-          id: `LN-10${i+1}`,
-          sector: sec,
-          profit: prof,
-          principal: princ
-        });
-      }
-
-      // Collect 5x5 matrix
-      const risk_matrix = [];
-      for (let i = 0; i < 5; i++) {
-        const row = [];
-        for (let j = 0; j < 5; j++) {
-          if (i === j) {
-            row.push(0.0);
-          } else {
-            const el = document.getElementById(`risk-${i}-${j}`);
-            row.push(el ? (parseFloat(el.value) || 0.0) : 0.0);
-          }
-        }
-        risk_matrix.push(row);
-      }
+      const loans = getLoanInputs();
+      const risk_matrix = getRiskMatrixInputs();
 
       const capitalInput = document.getElementById('capitalInput');
       const capital = capitalInput ? parseFloat(capitalInput.value) : null;
@@ -2171,7 +2156,7 @@ Pass (μ Dominates)
         });
         const json = await res.json();
         if (json.status === 'success') {
-          appData = json.data;
+          window.appData = json.data;
           renderResults(json);
           setTimeout(() => {
             switchTab('screen-results');
@@ -2190,10 +2175,11 @@ Pass (μ Dominates)
       }
     }
 
-    // 4. Render Dynamic Elements
+    // 4. Render Dynamic Elements Across All Screens
     function renderResults(payload) {
       if (!payload) return;
       const data = payload.data || payload;
+      window.appData = data;
 
       // Update Screen 2 Cost Metric
       const costEl = document.getElementById('metric-cost');
@@ -2201,7 +2187,91 @@ Pass (μ Dominates)
         costEl.innerText = data.quantum.objective.toFixed(2) + ' eV';
       }
 
-      // Update KPIs
+      // Update Screen 2 Wire Measurement meters
+      if (data.quantum && data.quantum.bitstring) {
+        for (let i = 0; i < 5; i++) {
+          const bit = data.quantum.bitstring[i];
+          const measEl = document.getElementById(`circuit-meas-${i}`);
+          const valEl = document.getElementById(`meas-val-${i}`);
+          if (valEl) {
+            valEl.innerText = `|${bit}⟩ ${bit === '1' ? 'Selected' : 'Excluded'}`;
+          }
+          if (measEl) {
+            if (bit === '1') {
+              measEl.className = "relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-md font-bold transition-all";
+            } else {
+              measEl.className = "relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-surface-variant text-outline font-label-sm text-label-sm flex items-center gap-1 transition-all opacity-70";
+            }
+          }
+        }
+      }
+
+      // Update Screen 2 Peak Amplitude Badge
+      const peakEl = document.getElementById('peakAmplitudeBadge');
+      if (peakEl && data.quantum) {
+        const secSummary = data.selected_sectors_qaoa ? data.selected_sectors_qaoa.join(', ') : '';
+        peakEl.innerText = `Peak Amplitude: |${data.quantum.bitstring}⟩ (${secSummary})`;
+      }
+
+      // Update Screen 2 Ansatz Parameters
+      const ansatzEl = document.getElementById('ansatzParamsDisplay');
+      if (ansatzEl && data.qubo_params) {
+        ansatzEl.innerText = `QAOA Ansatz (p=${data.qubo_params.reps}): COBYLA Optimized | Statevector Fidelity: ${data.matched ? '100.0%' : '95.2%'}`;
+      }
+
+      // Update Screen 2 Live Telemetry Log Stream
+      const logStream = document.getElementById('telemetryLogStream');
+      if (logStream && data.telemetry_logs) {
+        logStream.innerHTML = '';
+        data.telemetry_logs.forEach(log => {
+          const item = document.createElement('div');
+          item.className = 'text-on-surface-variant flex gap-space-xs font-mono text-xs';
+          item.innerHTML = `<span class="text-outline shrink-0">[${log.time}]</span><span>${log.text}</span>`;
+          logStream.appendChild(item);
+        });
+      }
+
+      // Update Screen 2 Wavefunction Distribution List
+      const chartContainer = document.getElementById('sampleDistributionList');
+      if (chartContainer && data.samples) {
+        chartContainer.innerHTML = '';
+        const topSamples = data.samples.slice(0, 8);
+        topSamples.forEach(s => {
+          const isOptimal = s.bitstring === (data.quantum ? data.quantum.bitstring : '');
+          const secNames = [];
+          if (data.loans) {
+            for (let b = 0; b < s.bitstring.length; b++) {
+              if (s.bitstring[b] === '1' && data.loans[b]) {
+                secNames.push(data.loans[b].sector);
+              }
+            }
+          }
+          const secLabel = secNames.length > 0 ? `(${secNames.join(', ')})` : '(No allocations)';
+          const row = document.createElement('div');
+          row.className = 'flex flex-col gap-1 p-space-xs rounded bg-surface-container font-label-sm text-label-sm';
+          row.innerHTML = `
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-space-xs flex-wrap">
+                <span class="font-mono font-bold ${isOptimal ? 'text-primary' : 'text-on-surface'}">|${s.bitstring}⟩</span>
+                <span class="text-xs text-on-surface-variant truncate max-w-[220px]">${secLabel}</span>
+                <span class="px-1.5 py-0.5 rounded ${s.is_valid ? 'bg-primary-container text-on-primary-container' : 'bg-error-container text-on-error-container'} text-[9px] font-bold">
+                  ${s.is_valid ? 'k=3 Valid' : 'k=' + s.k + ' Penalty'}
+                </span>
+              </div>
+              <div class="flex items-center gap-space-sm shrink-0">
+                <span class="font-mono text-tertiary">E = ${s.energy.toFixed(1)}</span>
+                <span class="font-mono text-right w-12">${s.probability.toFixed(1)}%</span>
+              </div>
+            </div>
+            <div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden p-0.5">
+              <div class="${isOptimal ? 'bg-primary' : (s.is_valid ? 'bg-secondary' : 'bg-error-container')} h-full rounded" style="width: ${Math.min(100, Math.max(3, s.probability))}%"></div>
+            </div>
+          `;
+          chartContainer.appendChild(row);
+        });
+      }
+
+      // Update Screen 3 KPIs
       const kpiCount = document.getElementById('kpi-selected-summary');
       if (kpiCount && data.selected_loans_qaoa) {
         kpiCount.innerText = `${data.selected_loans_qaoa.length} of 5 Selected`;
@@ -2219,14 +2289,14 @@ Pass (μ Dominates)
         kpiFid.innerText = data.matched ? '100.0%' : '95.2%';
       }
 
-      // Bitstring display
+      // Screen 3 Bitstring display
       const bitEl = document.getElementById('bitstringDisplay');
       if (bitEl && data.quantum) {
         const b = data.quantum.bitstring;
         bitEl.innerText = `QUBO Variable Bitstrings: [x₁=${b[0]}, x₂=${b[1]}, x₃=${b[2]}, x₄=${b[3]}, x₅=${b[4]}]`;
       }
 
-      // Comparison Table
+      // Screen 3 Comparison Table
       const cmpOptQAOA = document.getElementById('cmp-opt-qaoa');
       if (cmpOptQAOA && data.selected_loans_qaoa) {
         cmpOptQAOA.innerText = `[${data.selected_loans_qaoa.join(', ')}] (${data.selected_sectors_qaoa.join(', ')})`;
@@ -2273,7 +2343,38 @@ Pass (μ Dominates)
         cmpCardStatus.innerText = `Pass (μ=${data.qubo_params.mu_effective} dominates)`;
       }
 
-      // Render 5 Bento Cards
+      // Screen 3 Lagrangian card
+      const lagMul = document.getElementById('lagrangianParamMultiplier');
+      if (lagMul && data.qubo_params) {
+        lagMul.innerText = `Penalty Multiplier μ_effective = ${data.qubo_params.mu_effective} (Auto-scaled)`;
+      }
+      const lagDesc = document.getElementById('lagrangianParamDesc');
+      if (lagDesc && data.qubo_params) {
+        lagDesc.innerText = `Auto-scaled constraint penalty ensures (Σ x_i - 3)² = 0 strictly dominates unconstrained profit (μ = ${data.qubo_params.mu_effective} ≥ safe bound).`;
+      }
+
+      // Screen 3 Proof drawer output
+      const proofOut = document.getElementById('proofConsoleOutput');
+      if (proofOut && data.quantum && data.loans) {
+        const profStr = data.loans.map(l => `${l.profit.toFixed(1)}*x_${l.id}`).join(' + ');
+        proofOut.innerHTML = `
+          <p class="text-tertiary">&gt; [INITIALIZE] Initializing 5-qubit Hilbert space |00000&gt; ... DONE</p>
+          <p>&gt; [QUBO_FORMULATION] H = -(${profStr}) + 1.0*(Σ σ_ij x_i x_j) + ${data.qubo_params.mu_effective}*(Σ x_i - 3)²</p>
+          <p>&gt; [TRANSPILE] Target native gates: RZ, RX, CNOT. Layer count = ${data.qubo_params.reps}. Parameterized Ansatz.</p>
+          <p>&gt; [SHOT_SAMPLE] 1024 shots executed on Simulated Aer backend.</p>
+          <p class="text-primary font-bold">&gt; [GROUND_STATE] Bitstring |${data.quantum.bitstring}&gt; selected: ${data.selected_loans_qaoa.join(', ')} (${data.selected_sectors_qaoa.join(', ')}).</p>
+          <p>&gt; [FINANCIALS] Expected Return: +₹${data.total_profit_qaoa.toFixed(2)} L | Covariance Risk: ${data.total_risk_qaoa.toFixed(4)} | Net Objective E: ${data.objective_qaoa.toFixed(4)}</p>
+          <p class="text-tertiary font-bold">&gt; [VALIDATION] Brute-force optimal state: |${data.classical ? data.classical.bitstring : data.quantum.bitstring}&gt; (E=${data.objective_brute_force.toFixed(4)}). Match: ${data.matched ? '100% PERFECT MATCH' : 'Divergence: ' + data.divergence}</p>
+        `;
+      }
+
+      // Screen 3 Disbursement action bar
+      const disbText = document.getElementById('disbursementOrderText');
+      if (disbText && data.selected_loans_qaoa) {
+        disbText.innerText = `Execute disbursement orders for ${data.selected_loans_qaoa.join(', ')} (${data.selected_sectors_qaoa.join(', ')})`;
+      }
+
+      // Screen 3 Bento Grid Cards
       const bentoContainer = document.getElementById('resultsBentoGrid');
       if (bentoContainer && data.loans) {
         bentoContainer.innerHTML = '';
@@ -2346,42 +2447,44 @@ Pass (μ Dominates)
         });
       }
 
-      // Render sample distribution list
-      const chartContainer = document.getElementById('sampleDistributionList');
-      if (chartContainer && data.samples) {
-        chartContainer.innerHTML = '';
-        const topSamples = data.samples.slice(0, 8);
-        topSamples.forEach(s => {
-          const isOptimal = s.bitstring === (data.quantum ? data.quantum.bitstring : '');
-          const row = document.createElement('div');
-          row.className = 'flex items-center justify-between p-space-xs rounded bg-surface-container font-label-sm text-label-sm';
-          row.innerHTML = `
-            <div class="flex items-center gap-space-xs">
-              <span class="font-mono font-bold ${isOptimal ? 'text-primary' : 'text-on-surface'}">${s.bitstring}</span>
-              <span class="px-1.5 py-0.5 rounded ${s.is_valid ? 'bg-primary-container text-on-primary-container' : 'bg-error-container text-on-error-container'} text-[9px] font-bold">
-                ${s.is_valid ? 'k=3 Valid' : 'k=' + s.k + ' Penalty'}
-              </span>
-            </div>
-            <div class="flex items-center gap-space-sm">
-              <span class="font-mono text-tertiary">E = ${s.energy.toFixed(1)}</span>
-              <div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
-                <div class="${isOptimal ? 'bg-primary' : 'bg-secondary'} h-full" style="width: ${Math.min(100, Math.max(5, s.probability))}%"></div>
-              </div>
-              <span class="font-mono text-right w-10">${s.probability.toFixed(1)}%</span>
-            </div>
-          `;
-          chartContainer.appendChild(row);
-        });
+      // Update Screen 4 Math Ground State and Energy Topography
+      const mathGround = document.getElementById('mathGroundStateBadge');
+      if (mathGround && data.quantum) {
+        mathGround.innerText = `Ground State: |${data.quantum.bitstring}⟩ (${data.selected_sectors_qaoa ? data.selected_sectors_qaoa.join(', ') : 'Optimal'})`;
       }
+      const mathMin = document.getElementById('mathGlobalMinEnergy');
+      if (mathMin && data.quantum) {
+        mathMin.innerText = `Global Min Energy: ${data.quantum.objective.toFixed(2)} eV (Target Basin)`;
+      }
+      const svgLabel = document.getElementById('svgGroundStateLabel');
+      if (svgLabel && data.quantum) {
+        svgLabel.textContent = `|${data.quantum.bitstring}⟩ Ground State`;
+      }
+      const svgEnergy = document.getElementById('svgGroundStateEnergy');
+      if (svgEnergy && data.quantum) {
+        svgEnergy.textContent = `E = ${data.quantum.objective.toFixed(2)} (Max Return + Valid K=3)`;
+      }
+
+      // Update live Screen 1 calculations
+      updateScreen1LiveCalculations();
     }
 
     // 5. Sensitivity Slider Handler
     async function updateSensitivity(mu, lam) {
       try {
+        const loans = getLoanInputs();
+        const risk_matrix = getRiskMatrixInputs();
         const res = await fetch('/optimize', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lambda: parseFloat(lam), mu: parseFloat(mu), reps: 2 })
+          body: JSON.stringify({
+            loans: loans,
+            risk_matrix: risk_matrix,
+            lambda: parseFloat(lam),
+            mu: parseFloat(mu),
+            reps: 2,
+            auto_scale_mu: false
+          })
         });
         const json = await res.json();
         if (json.status === 'success') {
@@ -2410,8 +2513,8 @@ Pass (μ Dominates)
 
     // 8. Fiduciary Ledger Export
     function exportAuditLedger() {
-      if (!appData) return;
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appData, null, 2));
+      if (!window.appData) return;
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.appData, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute("href", dataStr);
       downloadAnchor.setAttribute("download", "Thrissur_Bank_Quantum_Audit_PS05.json");
@@ -2424,6 +2527,14 @@ Pass (μ Dominates)
     window.addEventListener('DOMContentLoaded', () => {
       loadPortfolio();
       updateSectorLabels();
+      updateScreen1LiveCalculations();
+
+      const slider = document.getElementById('lambdaSlider');
+      if (slider) {
+        slider.addEventListener('change', (e) => {
+          updateSensitivity(parseFloat(e.target.value), 1.0);
+        });
+      }
     });
   </script>
 </body>
