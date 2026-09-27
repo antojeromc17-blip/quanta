@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Anton:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Bebas+Neue:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-tint": "#416920", "secondary-fixed": "#ffdea8", "primary-fixed-dim": "#a6d47e", "on-primary-fixed": "#0c2000", "surface-bright": "#f7fdd1", "surface-container-high": "#e6ecc1", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-variant": "#e0e6bb", "outline-variant": "#bcc9cd", "tertiary-fixed": "#e2e2e2", "surface-container-highest": "#e0e6bb", "surface-container-low": "#f2f8cc", "primary-container": "#86b361", "on-error-container": "#93000a", "tertiary-container": "#a6a6a6", "secondary-fixed-dim": "#e3c28b", "on-primary": "#ffffff", "surface-container": "#ecf2c6", secondary: "#735b2d", primary: "#416920", outline: "#6d797d", "on-secondary-fixed-variant": "#594318", "surface-container-lowest": "#ffffff", "on-background": "#191e04", "on-surface-variant": "#3d494c", background: "#f7fdd1", "surface-dim": "#d8deb3", "on-primary-fixed-variant": "#2a5008", "on-tertiary-container": "#3c3c3c", "on-tertiary-fixed": "#1b1b1b", "on-error": "#ffffff", error: "#ba1a1a", "inverse-surface": "#2e3316", "inverse-primary": "#a6d47e", "on-surface": "#191e04", "inverse-on-surface": "#eff5c9", "on-primary-container": "#204400", tertiary: "#5e5e5e", "on-tertiary-fixed-variant": "#474747", "primary-fixed": "#c1f198", "secondary-container": "#fddba2", "tertiary-fixed-dim": "#c6c6c6", "on-secondary-container": "#785f31", surface: "#f7fdd1", "on-secondary": "#ffffff", "on-secondary-fixed": "#271900"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {gutter: "1.25rem", "gutter-desktop": "1.5rem", margin: "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem"}, fontFamily: {"body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], headline: ["Anton"], display: ["Anton"], body: ["Plus Jakarta Sans"], label: ["Bebas Neue"]}, fontSize: {"body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0em", fontWeight: "400"}], "headline-xl": ["36px", {lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700"}], "headline-md": ["20px", {lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "headline-lg-mobile": ["22px", {lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600"}], "headline-xl-mobile": ["28px", {lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-sm": ["12px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "label-md": ["12px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600"}], "label-sm": ["10px", {lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500"}], "headline-lg": ["28px", {lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600"}], "headline-sm": ["16px", {lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Quantum Loan Optimizer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W0aF7LrtFw1jnwEgCnHDzgf3Sqb78l_a_vhU_egTtg-eEMyNAplFc8lIsR2INPYx4bWI6dymi0VkXeOTk7q2pQL2lSyanvKchB7Zns5WrECJo1-JMGhQLAE9l7JFDNPqDITe6nxyGp_IAHceXlp-zXIjxao4t7YJgfhRnYOXssiLQ-joaM_38y6aDfUG_dVfJ-9YdOdnw5enf9tN6O8skHwLksQr7bdxvdy9BwaeM0FtrWKO3KNgxL7M4L"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">Quantum Loan Portfolio Optimizer</span><span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">PS05 • Thrissur Cooperative Bank Demo</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Institutional Fiduciary Asset Allocation System</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full" data-active-classes="bg-surface-container-high text-primary"><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="portfolio-input-and-matrix" href="#">1. Portfolio Input &amp; Matrix</a><a aria-current="page" class="px-space-md py-space-sm rounded-full font-label-md transition-colors bg-surface-container-high text-primary" data-path="quantum-execution" href="#">2. Quantum Execution</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="optimization-results" href="#">3. Optimization Results</a><a class="px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="mathematical-intuition-under-the-hood" href="#">4. Mathematical Intuition / Under the Hood</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="text-tertiary font-semibold">QPU Sim: QAOA (p=2) Online</span></div><button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[16px] text-primary">play_circle</span><span>Quick Demo Tour</span></button><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low"><button class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Institutional Presentation View" type="button"><span class="material-symbols-outlined text-[18px]">present_to_all</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-surface py-space-lg px-margin-desktop">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg relative z-10">
+<!-- Breadcrumb & Quantum Engine Header Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="text-on-surface-variant">01 Input Matrix</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">02 Quantum Execution</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant">03 Results</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span>Rigid Ising Co-Processor [q-sim-active]</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant">Hamiltonian Cost:</span>
+<span class="font-bold text-tertiary" id="metric-cost">-147.45 eV</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant">Fidelity:</span>
+<span class="font-bold text-primary">99.82%</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant">Circuit Depth:</span>
+<span class="font-bold text-secondary">p = 2 (16 gates)</span>
+</div>
+</div>
+</div>
+<!-- Hero Quantum Processing Status Card -->
+<div class="relative rounded-xl bg-surface-container-lowest p-space-lg overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md relative z-10 pb-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">Algorithmic Quantum State Computation</span>
+<span class="text-outline-variant font-label-sm text-label-sm">COBYLA Loop: Step 28/28</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight flex items-center gap-space-sm">
+<span>QAOA Circuit Execution in Progress...</span>
+<span class="inline-block w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Quantum Approximate Optimization Algorithm running on 5 Qubits (State Space: 32 Basis Vectors). Solving Thrissur Co-op NP-Hard Asset Allocation with Hard Cardinality Constraint (k=3).
+            </p>
+</div>
+<!-- Quick Action CTA to Step 3 -->
+<div class="flex items-center gap-space-md shrink-0 w-full lg:w-auto">
+<a class="group relative flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-lg shadow-primary/20 hover:bg-primary-fixed hover:shadow-primary/40 transition-all duration-300 w-full lg:w-auto" data-path="optimization-results" href="#">
+<span>View Optimization Results</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5 Qubit Quantum Circuit Telemetry Matrix -->
+<div class="mt-space-md rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">5-Wire Parameterized Co-Processor Wireframe</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-surface-container-highest inline-block"></span> H: Superposition</span>
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-primary/20 text-primary font-bold inline-block text-center leading-3">U</span> Cost: e^{-iγC}</span>
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-secondary-container/40 text-secondary inline-block text-center leading-3">B</span> Mixer: e^{-iβB}</span>
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-tertiary/20 text-tertiary inline-block text-center leading-3">M</span> Z-Measurement</span>
+</div>
+</div>
+<!-- Interactive Circuit Board Canvas -->
+<div class="w-full overflow-x-auto py-space-sm">
+<div class="min-w-[840px] flex flex-col gap-space-sm relative">
+<!-- Quantum Rail Loop (q[0] to q[4]) -->
+<!-- Wire 0: Gold Loan Portfolio -->
+<div class="flex items-center h-12 relative">
+<div class="w-28 shrink-0 flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">q[0]</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">GL-01 (Gold)</span>
+</div>
+<div class="relative flex-1 flex items-center h-full">
+<div class="absolute inset-x-0 h-[2px] bg-outline-variant/40"></div>
+<!-- Wire Pulse Beam -->
+<div class="absolute h-[2px] bg-primary w-24 blur-[1px] animate-[pulse_2s_infinite]"></div>
+<!-- Layer 0: Hadamard Gate -->
+<div class="relative z-10 ml-8 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-md">H</div>
+<!-- Layer 1: Cost unitary U(gamma) -->
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span>e<sup>-iγ₁C</sup></span>
+</div>
+<!-- Entanglement / CNOT Bus (q0 to q1) -->
+<div class="relative z-10 ml-14 flex flex-col items-center">
+<span class="w-3 h-3 rounded-full bg-primary ring-2 ring-primary/40"></span>
+<div class="w-[2px] h-12 bg-primary/80 absolute top-1.5"></div>
+</div>
+<!-- Mixer Unitary U(beta) -->
+<div class="relative z-10 ml-16 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span>e<sup>-iβ₁B</sup></span>
+</div>
+<!-- Layer 2: Cost Unitary 2 -->
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₂C</sup></span>
+</div>
+<!-- Layer 2 Mixer Unitary -->
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₂B</sup></span>
+</div>
+<!-- Z-Measurement Meter -->
+<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>M(z)</span>
+</div>
+</div>
+</div>
+<!-- Wire 1: Agricultural Working Capital -->
+<div class="flex items-center h-12 relative">
+<div class="w-28 shrink-0 flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">q[1]</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">AG-02 (Agri)</span>
+</div>
+<div class="relative flex-1 flex items-center h-full">
+<div class="absolute inset-x-0 h-[2px] bg-outline-variant/40"></div>
+<div class="relative z-10 ml-8 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-md">H</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₁C</sup></span>
+</div>
+<!-- CNOT Target Ring -->
+<div class="relative z-10 ml-14 flex items-center justify-center">
+<span class="w-4 h-4 rounded-full border border-primary flex items-center justify-center text-primary font-bold text-[10px]">+</span>
+</div>
+<div class="relative z-10 ml-16 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₁B</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₂C</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₂B</sup></span>
+</div>
+<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>M(z)</span>
+</div>
+</div>
+</div>
+<!-- Wire 2: MSME Retail Commercial -->
+<div class="flex items-center h-12 relative">
+<div class="w-28 shrink-0 flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">q[2]</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">MS-03 (MSME)</span>
+</div>
+<div class="relative flex-1 flex items-center h-full">
+<div class="absolute inset-x-0 h-[2px] bg-outline-variant/40"></div>
+<div class="relative z-10 ml-8 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-md">H</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₁C</sup></span>
+</div>
+<div class="relative z-10 ml-14 w-4"></div>
+<div class="relative z-10 ml-16 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₁B</sup></span>
+</div>
+<!-- Entanglement to Wire 3 -->
+<div class="relative z-10 ml-6 flex flex-col items-center">
+<span class="w-3 h-3 rounded-full bg-secondary ring-2 ring-secondary/40"></span>
+<div class="w-[2px] h-12 bg-secondary/80 absolute top-1.5"></div>
+</div>
+<div class="relative z-10 ml-6 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₂C</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₂B</sup></span>
+</div>
+<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>M(z)</span>
+</div>
+</div>
+</div>
+<!-- Wire 3: Priority Housing Infrastructure -->
+<div class="flex items-center h-12 relative">
+<div class="w-28 shrink-0 flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">q[3]</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">HS-04 (Housing)</span>
+</div>
+<div class="relative flex-1 flex items-center h-full">
+<div class="absolute inset-x-0 h-[2px] bg-outline-variant/40"></div>
+<div class="relative z-10 ml-8 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-md">H</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₁C</sup></span>
+</div>
+<div class="relative z-10 ml-14 w-4"></div>
+<div class="relative z-10 ml-16 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₁B</sup></span>
+</div>
+<!-- Target of Wire 2 Entanglement -->
+<div class="relative z-10 ml-6 flex items-center justify-center">
+<span class="w-4 h-4 rounded-full border border-secondary flex items-center justify-center text-secondary font-bold text-[10px]">+</span>
+</div>
+<div class="relative z-10 ml-6 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₂C</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₂B</sup></span>
+</div>
+<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>M(z)</span>
+</div>
+</div>
+</div>
+<!-- Wire 4: Thrissur Micro-Enterprise -->
+<div class="flex items-center h-12 relative">
+<div class="w-28 shrink-0 flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">q[4]</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">ME-05 (Micro)</span>
+</div>
+<div class="relative flex-1 flex items-center h-full">
+<div class="absolute inset-x-0 h-[2px] bg-outline-variant/40"></div>
+<div class="relative z-10 ml-8 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-md">H</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₁C</sup></span>
+</div>
+<div class="relative z-10 ml-14 w-4"></div>
+<div class="relative z-10 ml-16 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₁B</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">
+<span>e<sup>-iγ₂C</sup></span>
+</div>
+<div class="relative z-10 ml-12 px-3 py-1.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">
+<span>e<sup>-iβ₂B</sup></span>
+</div>
+<div class="relative z-10 ml-auto mr-4 px-3 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>M(z)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span>QAOA Ansatz Parameters: γ₁ = 0.384, β₁ = 1.092, γ₂ = 0.812, β₂ = 0.441</span>
+<span class="text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary inline-block"></span> Quantum Hardware Sim: Thrissur-5Q Transmon Lattice</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Split Grid: State Probability Collapse & Telemetry Log -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Column Left (7 cols): Animated State Probability Distribution -->
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-xl">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Wavefunction Amplitude Collapse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Eigenstate Sampling (1024 Shots) | Top 8 of 32 Basis Vectors</span>
+</div>
+<div class="px-space-sm py-space-xs rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+              Peak Amplitude: |01110⟩
+            </div>
+</div>
+<!-- Pulsing Probability Chart -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<!-- Optimal Candidate 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-primary font-bold">|01110⟩ (Agri, MSME, Housing) [VALID: k=3]</span>
+<span class="text-primary font-semibold">41.8% (428 shots)</span>
+</div>
+<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded bg-primary transition-all duration-700 relative overflow-hidden" style="width: 41.8%;">
+<div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Optimal Candidate 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary-fixed font-bold">|11010⟩ (Gold, Agri, Housing) [VALID: k=3]</span>
+<span class="text-secondary-fixed font-semibold">28.4% (291 shots)</span>
+</div>
+<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded bg-secondary transition-all duration-700" style="width: 28.4%;"></div>
+</div>
+</div>
+<!-- Candidate 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">|10110⟩ (Gold, MSME, Housing) [VALID: k=3]</span>
+<span class="text-on-surface-variant">14.2% (145 shots)</span>
+</div>
+<div class="w-full h-5 rounded bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded bg-surface-tint/60 transition-all duration-700" style="width: 14.2%;"></div>
+</div>
+</div>
+<!-- Constraint Violation 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant/70">|00111⟩ (MSME, Housing, Micro) [VALID: k=3]</span>
+<span class="text-on-surface-variant/70">7.6% (78 shots)</span>
+</div>
+<div class="w-full h-3 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full rounded bg-outline-variant transition-all duration-700" style="width: 7.6%;"></div>
+</div>
+</div>
+<!-- Infeasible State (k=4 penalized by Lambda) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-error/80 flex items-center gap-1">
+<span>|11110⟩ (Penalty Evicted: k=4)</span>
+<span class="text-[10px] px-1 rounded bg-error-container/30 text-error">λ-suppressed</span>
+</span>
+<span class="text-error/80">3.1% (32 shots)</span>
+</div>
+<div class="w-full h-2.5 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full rounded bg-error/40 transition-all duration-700" style="width: 3.1%;"></div>
+</div>
+</div>
+<!-- Infeasible State (k=2) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-error/80 flex items-center gap-1">
+<span>|01010⟩ (Penalty Evicted: k=2)</span>
+<span class="text-[10px] px-1 rounded bg-error-container/30 text-error">λ-suppressed</span>
+</span>
+<span class="text-error/80">2.4% (25 shots)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full rounded bg-error/30 transition-all duration-700" style="width: 2.4%;"></div>
+</div>
+</div>
+<!-- Noise Floor -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline text-xs">Remaining 26 Orthogonal Basis States</span>
+<span class="text-outline text-xs">2.5% (25 shots combined)</span>
+</div>
+<div class="w-full h-1.5 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full rounded bg-outline/20 transition-all duration-700" style="width: 2.5%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+<span>Eigenstate Convergence: Global Minimum Confirmed</span>
+</span>
+<span class="text-primary font-semibold">Variance: σ² &lt; 0.0014</span>
+</div>
+</div>
+<!-- Column Right (5 cols): Live Telemetry Console & Terminal -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Terminal Shell Card -->
+<div class="flex flex-col flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-xl overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary/70"></span>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface-variant">hybrid_telemetry.log</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-space-xs rounded">LIVE FEED</span>
+</div>
+<!-- Terminal Output Stream -->
+<div class="flex flex-col gap-space-xs font-label-sm text-label-sm overflow-y-auto max-h-[310px] pr-space-xs space-y-1">
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.01s]</span>
+<span>Mapping 5 loan assets &amp; covariance matrix to Ising QUBO Hamiltonian...</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.05s]</span>
+<span class="text-secondary-fixed">Matrix Dim: 5x5 | Non-zero interactions: 10 coupling terms</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.08s]</span>
+<span>Applying hard constraint penalty <span class="text-primary">λ(∑ x_i - 3)²</span> where target k=3</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.11s]</span>
+<span>Lagrange Multiplier set to λ = 450.0 (infeasible energy barrier active)</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.14s]</span>
+<span class="text-tertiary font-semibold">QPU State Prep: 5 Qubits placed in uniform superposition via H^⊗5</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.21s]</span>
+<span>Constructing 2-Layer QAOA Ansatz: U(β₂, γ₂) U(β₁, γ₁) |+⟩^⊗5</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.29s]</span>
+<span class="text-primary">Classical-Quantum hybrid loop: COBYLA optimizing parameters (γ, β)...</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.35s]</span>
+<span>Iter 12: Cost E = -82.10 | ΔE = 14.32</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.39s]</span>
+<span>Iter 22: Cost E = -138.80 | ΔE = 2.15</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.42s]</span>
+<span class="text-tertiary font-bold">Convergence reached at iteration 28 (Cost E = -147.45)</span>
+</div>
+<div class="text-on-surface-variant flex gap-space-xs">
+<span class="text-outline shrink-0">[0.48s]</span>
+<span class="text-primary-fixed">Sampling 1024 shots: Peak probability on optimal eigenstate |01110⟩</span>
+</div>
+<div class="text-on-surface flex gap-space-xs items-center pt-1 font-semibold text-tertiary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Quantum execution verified against risk boundary thresholds. Ready.</span>
+</div>
+</div>
+</div>
+<!-- Quantum Telemetry Metadata Micro-Cards -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Classical Solver Speed</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">0.48s</span>
+<span class="font-label-sm text-label-sm text-tertiary">14x vs Brute Force</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero heuristic violations</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Energy Gap (E₁ - E₀)</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-primary">28.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Units</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">High spectral robustness</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Fiduciary Regulatory Strip -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Thrissur Cooperative Bank Fiduciary Compliance Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">RBI Master Circular on Priority Sector Lending (PSL) &amp; Stressed Asset Liquidity verified on simulated QPU registers.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors" data-path="portfolio-input-and-matrix" href="#">
+            Modify Matrix
+          </a>
+<a class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-fixed transition-colors flex items-center gap-1" data-path="optimization-results" href="#">
+<span>Proceed to Results</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface">Thrissur Cooperative Bank Ltd.</span><span>•</span><span>Autonomous Quantum Computing Optimization Cluster (Simulated Rig)</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><span class="text-on-surface-variant">Algorithm: QAOA 2-Step Hamiltonian</span><span class="text-on-surface-variant">State: Coherent Co-processor Active</span><span>© 2025 PS05 Presentation System</span></div></div></footer></body></html>
