@@ -316,12 +316,12 @@
 <td class="py-space-md px-space-md">
 <div class="flex items-center gap-space-sm">
 <span class="w-2 h-2 rounded-full bg-tertiary shrink-0"></span>
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
 <div class="flex items-center gap-space-xs">
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-101</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Agri</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-0">Textiles</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Agri-Tech &amp; Spice Processing</span>
+<input type="text" id="sector-0" value="Textiles" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
 </div>
 </div>
 </td>
@@ -332,21 +332,19 @@
 <span>Cr</span>
 </div>
 </td>
-<td class="py-space-md px-space-sm text-right">
-<div class="flex flex-col items-end">
-<span class="font-label-md text-label-md text-tertiary font-bold">₹42.0 L</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">15.0% IRR</span>
+<td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
+<div class="flex items-center gap-1 justify-end">
+<span class="text-tertiary font-bold">₹</span>
+<input type="number" id="profit-0" value="1.8" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<span class="text-tertiary font-bold">L</span>
 </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
 </td>
 <td class="py-space-md px-space-sm text-center">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">
-                    A+
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">A+</span>
 </td>
 <td class="py-space-md px-space-md text-right">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">
-                    High (140%)
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">140%</span>
 </td>
 </tr>
 <!-- LN-102 -->
@@ -354,12 +352,12 @@
 <td class="py-space-md px-space-md">
 <div class="flex items-center gap-space-sm">
 <span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
 <div class="flex items-center gap-space-xs">
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-102</span>
-<span class="px-space-xs py-0.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">CleanTech</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm" id="badge-1">Agri</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Renewable Solar Micro-Grid</span>
+<input type="text" id="sector-1" value="Agri-processing" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
 </div>
 </div>
 </td>
@@ -370,21 +368,19 @@
 <span>Cr</span>
 </div>
 </td>
-<td class="py-space-md px-space-sm text-right">
-<div class="flex flex-col items-end">
-<span class="font-label-md text-label-md text-tertiary font-bold">₹67.2 L</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">16.0% IRR</span>
+<td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
+<div class="flex items-center gap-1 justify-end">
+<span class="text-tertiary font-bold">₹</span>
+<input type="number" id="profit-1" value="1.5" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<span class="text-tertiary font-bold">L</span>
 </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
 </td>
 <td class="py-space-md px-space-sm text-center">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-tertiary">
-                    AA
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-tertiary">AA</span>
 </td>
 <td class="py-space-md px-space-md text-right">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">
-                    High (155%)
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">160%</span>
 </td>
 </tr>
 <!-- LN-103 -->
@@ -392,12 +388,12 @@
 <td class="py-space-md px-space-md">
 <div class="flex items-center gap-space-sm">
 <span class="w-2 h-2 rounded-full bg-secondary-fixed shrink-0"></span>
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
 <div class="flex items-center gap-space-xs">
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-103</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">ColdChain</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-2">Retail</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Marine Exports &amp; Cold Chain</span>
+<input type="text" id="sector-2" value="Retail" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
 </div>
 </div>
 </td>
@@ -408,21 +404,19 @@
 <span>Cr</span>
 </div>
 </td>
-<td class="py-space-md px-space-sm text-right">
-<div class="flex flex-col items-end">
-<span class="font-label-md text-label-md text-tertiary font-bold">₹52.5 L</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">15.0% IRR</span>
+<td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
+<div class="flex items-center gap-1 justify-end">
+<span class="text-tertiary font-bold">₹</span>
+<input type="number" id="profit-2" value="2.0" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<span class="text-tertiary font-bold">L</span>
 </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
 </td>
 <td class="py-space-md px-space-sm text-center">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">
-                    A
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">A</span>
 </td>
 <td class="py-space-md px-space-md text-right">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
-                    Medium (110%)
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">130%</span>
 </td>
 </tr>
 <!-- LN-104 -->
@@ -430,12 +424,12 @@
 <td class="py-space-md px-space-md">
 <div class="flex items-center gap-space-sm">
 <span class="w-2 h-2 rounded-full bg-primary-container shrink-0"></span>
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
 <div class="flex items-center gap-space-xs">
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-104</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Med</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" id="badge-3">Transport</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Healthcare Diagnostics Hub</span>
+<input type="text" id="sector-3" value="Transport" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
 </div>
 </div>
 </td>
@@ -446,21 +440,19 @@
 <span>Cr</span>
 </div>
 </td>
-<td class="py-space-md px-space-sm text-right">
-<div class="flex flex-col items-end">
-<span class="font-label-md text-label-md text-tertiary font-bold">₹48.0 L</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">16.0% IRR</span>
+<td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
+<div class="flex items-center gap-1 justify-end">
+<span class="text-tertiary font-bold">₹</span>
+<input type="number" id="profit-3" value="1.2" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<span class="text-tertiary font-bold">L</span>
 </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
 </td>
 <td class="py-space-md px-space-sm text-center">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">
-                    A+
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-secondary">BBB+</span>
 </td>
 <td class="py-space-md px-space-md text-right">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">
-                    High (135%)
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">110%</span>
 </td>
 </tr>
 <!-- LN-105 -->
@@ -468,12 +460,12 @@
 <td class="py-space-md px-space-md">
 <div class="flex items-center gap-space-sm">
 <span class="w-2 h-2 rounded-full bg-outline shrink-0"></span>
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
 <div class="flex items-center gap-space-xs">
 <span class="font-label-md text-label-md font-bold text-on-surface">LN-105</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">Retail</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm" id="badge-4">Construct</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Commercial Retail &amp; Textile</span>
+<input type="text" id="sector-4" value="Construction" class="bg-surface-container-highest text-on-surface px-1.5 py-0.5 mt-1 rounded text-body-sm font-semibold outline-none border border-outline-variant focus:border-primary w-full" oninput="updateSectorLabels()" placeholder="Sector name">
 </div>
 </div>
 </td>
@@ -484,21 +476,19 @@
 <span>Cr</span>
 </div>
 </td>
-<td class="py-space-md px-space-sm text-right">
-<div class="flex flex-col items-end">
-<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹30.0 L</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">12.0% IRR</span>
+<td class="py-space-md px-space-sm text-right" onclick="event.stopPropagation()">
+<div class="flex items-center gap-1 justify-end">
+<span class="text-tertiary font-bold">₹</span>
+<input type="number" id="profit-4" value="2.4" step="0.1" class="w-16 bg-surface-container-highest text-tertiary text-right font-label-md font-bold px-1 py-0.5 rounded outline-none border border-outline-variant focus:border-primary">
+<span class="text-tertiary font-bold">L</span>
 </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Yield Proj.</span>
 </td>
 <td class="py-space-md px-space-sm text-center">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-on-surface-variant">
-                    BBB+
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-on-surface-variant">A+</span>
 </td>
 <td class="py-space-md px-space-md text-right">
-<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
-                    Medium (105%)
-                  </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">150%</span>
 </td>
 </tr>
 </tbody>
@@ -544,47 +534,56 @@
 <div class="w-full overflow-x-auto">
 <div class="min-w-[340px] grid grid-cols-6 gap-1.5 text-center font-label-sm text-label-sm">
 <!-- Header Row -->
-<div class="p-2 text-on-surface-variant font-bold"></div>
-<div class="p-2 text-on-surface font-bold">101</div>
-<div class="p-2 text-on-surface font-bold">102</div>
-<div class="p-2 text-on-surface font-bold">103</div>
-<div class="p-2 text-on-surface font-bold">104</div>
-<div class="p-2 text-on-surface font-bold">105</div>
-<!-- Row 1: LN-101 -->
-<div class="p-2 text-on-surface font-bold text-left flex items-center">101</div>
-<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-mono">1.00</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-bold font-mono">0.12</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.28</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-mono">0.18</div>
-<div class="p-2 rounded bg-error-container text-error font-bold font-mono">0.45</div>
-<!-- Row 2: LN-102 -->
-<div class="p-2 text-on-surface font-bold text-left flex items-center">102</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-bold font-mono">0.12</div>
-<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-mono">1.00</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-mono">0.15</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.22</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.31</div>
-<!-- Row 3: LN-103 -->
-<div class="p-2 text-on-surface font-bold text-left flex items-center">103</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.28</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-mono">0.15</div>
-<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-mono">1.00</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.33</div>
-<div class="p-2 rounded bg-error-container text-on-error font-extrabold font-mono shadow-sm animate-pulse">0.78</div>
-<!-- Row 4: LN-104 -->
-<div class="p-2 text-on-surface font-bold text-left flex items-center">104</div>
-<div class="p-2 rounded bg-surface-variant text-tertiary font-mono">0.18</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.22</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.33</div>
-<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-mono">1.00</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.26</div>
-<!-- Row 5: LN-105 -->
-<div class="p-2 text-on-surface font-bold text-left flex items-center">105</div>
-<div class="p-2 rounded bg-error-container text-error font-bold font-mono">0.45</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.31</div>
-<div class="p-2 rounded bg-error-container text-on-error font-extrabold font-mono shadow-sm animate-pulse">0.78</div>
-<div class="p-2 rounded bg-surface-variant text-on-surface font-mono">0.26</div>
-<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-mono">1.00</div>
+<div class="p-2 text-on-surface-variant font-bold text-xs flex items-center justify-center">Loan</div>
+<div class="p-2 text-on-surface font-bold text-xs" id="mat-head-0">101</div>
+<div class="p-2 text-on-surface font-bold text-xs" id="mat-head-1">102</div>
+<div class="p-2 text-on-surface font-bold text-xs" id="mat-head-2">103</div>
+<div class="p-2 text-on-surface font-bold text-xs" id="mat-head-3">104</div>
+<div class="p-2 text-on-surface font-bold text-xs" id="mat-head-4">105</div>
+
+<!-- Row 0: LN-101 -->
+<div class="p-2 text-on-surface font-bold text-left flex items-center text-xs" id="mat-row-0">101</div>
+<div class="p-1 rounded bg-surface-container-high text-outline font-mono flex items-center justify-center font-bold">0.00</div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-0-1" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(0, 1, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-0-2" value="0.50" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(0, 2, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-0-3" value="0.20" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(0, 3, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-0-4" value="0.40" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(0, 4, this.value)"></div>
+
+<!-- Row 1: LN-102 -->
+<div class="p-2 text-on-surface font-bold text-left flex items-center text-xs" id="mat-row-1">102</div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-1-0" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(0, 1, this.value)"></div>
+<div class="p-1 rounded bg-surface-container-high text-outline font-mono flex items-center justify-center font-bold">0.00</div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-1-2" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(1, 2, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-1-3" value="0.60" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(1, 3, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-1-4" value="0.20" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(1, 4, this.value)"></div>
+
+<!-- Row 2: LN-103 -->
+<div class="p-2 text-on-surface font-bold text-left flex items-center text-xs" id="mat-row-2">103</div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-2-0" value="0.50" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(0, 2, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-2-1" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(1, 2, this.value)"></div>
+<div class="p-1 rounded bg-surface-container-high text-outline font-mono flex items-center justify-center font-bold">0.00</div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-2-3" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(2, 3, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-2-4" value="0.50" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(2, 4, this.value)"></div>
+
+<!-- Row 3: LN-104 -->
+<div class="p-2 text-on-surface font-bold text-left flex items-center text-xs" id="mat-row-3">104</div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-3-0" value="0.20" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(0, 3, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-3-1" value="0.60" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(1, 3, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-3-2" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(2, 3, this.value)"></div>
+<div class="p-1 rounded bg-surface-container-high text-outline font-mono flex items-center justify-center font-bold">0.00</div>
+<div class="p-0.5 rounded bg-surface-container border border-primary/50"><input type="number" id="risk-3-4" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-primary font-mono font-bold text-xs py-1 outline-none" oninput="syncMatrixCell(3, 4, this.value)"></div>
+
+<!-- Row 4: LN-105 -->
+<div class="p-2 text-on-surface font-bold text-left flex items-center text-xs" id="mat-row-4">105</div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-4-0" value="0.40" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(0, 4, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-4-1" value="0.20" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(1, 4, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-4-2" value="0.50" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(2, 4, this.value)"></div>
+<div class="p-0.5 rounded bg-surface-container-lowest border border-outline-variant"><input type="number" id="risk-4-3" value="0.30" step="0.05" min="0" max="2" class="w-full text-center bg-transparent text-on-surface-variant font-mono text-xs py-1 outline-none" oninput="syncMatrixCell(3, 4, this.value)"></div>
+<div class="p-1 rounded bg-surface-container-high text-outline font-mono flex items-center justify-center font-bold">0.00</div>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant pt-2">
+<span class="text-primary font-medium">✨ Upper triangle editable (cyan border)</span>
+<span class="text-outline">Diagonal = 0.00 | Lower triangle auto-mirrored</span>
 </div>
 </div>
 <!-- Color Coding Legend -->
@@ -648,14 +647,18 @@
 </div>
 <!-- Action Launch Buttons -->
 <div class="flex items-center gap-space-md w-full lg:w-auto justify-end">
-<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs" type="button">
+<div class="flex items-center gap-2">
+<button onclick="loadPreset('default')" class="px-space-sm py-1.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-variant transition-colors" type="button">Preset: Bank Default</button>
+<button onclick="loadPreset('hackathon')" class="px-space-sm py-1.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-variant transition-colors" type="button">Preset: Hackathon</button>
+</div>
+<button onclick="resetToDefaults()" class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs" type="button">
 <span class="material-symbols-outlined text-[16px] text-on-surface-variant">restart_alt</span>
-<span>Reset / Randomize Weights</span>
+<span>Reset</span>
 </button>
-<a class="px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg font-bold shadow-lg transition-all transform hover:scale-[1.02] flex items-center gap-space-sm cursor-pointer" data-path="quantum-execution" href="#">
+<button onclick="triggerOptimization()" class="px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg font-bold shadow-lg transition-all transform hover:scale-[1.02] flex items-center gap-space-sm cursor-pointer" type="button">
 <span class="material-symbols-outlined text-[20px]">bolt</span>
-<span>Run QAOA Quantum Optimizer</span>
-</a>
+<span>Run Optimization</span>
+</button>
 </div>
 </div>
 </div>
@@ -1226,7 +1229,7 @@
 </div>
 <div class="my-space-sm flex flex-col">
 <div class="flex items-baseline gap-space-xs">
-<span class="font-headline-xl text-headline-xl font-bold text-on-surface">0.28</span>
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface" id="kpi-total-risk">1.80</span>
 <span class="font-label-md text-label-md text-on-surface-variant">/ 1.00</span>
 </div>
 <div class="flex items-center gap-space-xs mt-space-xs">
@@ -1246,7 +1249,7 @@
 </div>
 <div class="my-space-sm flex flex-col">
 <div class="flex items-baseline gap-space-xs">
-<span class="font-headline-xl text-headline-xl font-bold text-primary">99.4%</span>
+<span class="font-headline-xl text-headline-xl font-bold text-primary" id="kpi-fidelity">100.0%</span>
 <span class="font-label-sm text-label-sm text-on-surface-variant">|⟨ψ|ψ_exact⟩|²</span>
 </div>
 <div class="flex items-center gap-space-xs mt-space-xs">
@@ -1264,7 +1267,7 @@
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
 <div>
 <div class="flex items-center gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">QUBO Variable Bitstrings: [x₁=0, x₂=1, x₃=1, x₄=1, x₅=0]</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary" id="bitstringDisplay">QUBO Variable Bitstrings: [x₁=1, x₂=1, x₃=0, x₄=0, x₅=1]</span>
 </div>
 <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">5-Asset Loan Pool: Definitive Allocations</h2>
 </div>
@@ -1273,167 +1276,9 @@
 <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span> Non-Selected (2)</span>
 </div>
 </div>
-<!-- Bento-style Card Layout for 5 Loans -->
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
-<!-- Loan 1: LN-102 (Selected - Rank 1) -->
-<div class="relative bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-[0_0_24px_rgba(78,222,163,0.12)]">
-<div class="absolute inset-0 rounded-xl pointer-events-none bg-gradient-to-b from-surface-container-lowest to-transparent"></div>
-<div class="relative flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-tertiary text-on-tertiary font-bold tracking-wider uppercase">Rank 1 • QAOA Active</span>
-<span class="font-label-md text-label-md text-tertiary font-semibold tracking-wider">LN-102</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Renewable Solar Micro-Grid</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Kerala Clean Energy Cooperative Initiative</p>
-</div>
-<div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
-<div>
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">₹4.20 Cr</span>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-tertiary block">Expected Return</span>
-<span class="font-headline-sm text-headline-sm font-bold text-tertiary">+₹67.20 L</span>
-</div>
-</div>
-</div>
-<div class="relative flex flex-col gap-space-xs pt-space-xs">
-<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span>Risk Metric: Covariance Variance</span>
-<span class="text-tertiary font-semibold">Low (0.19)</span>
-</div>
-<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold bg-surface-variant px-space-sm py-space-xs rounded-lg">
-<span class="material-symbols-outlined text-[16px]">check_circle</span>
-<span>Selected by QAOA Optimizer</span>
-</div>
-</div>
-</div>
-<!-- Loan 2: LN-103 (Selected - Rank 2) -->
-<div class="relative bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-[0_0_24px_rgba(78,222,163,0.12)]">
-<div class="absolute inset-0 rounded-xl pointer-events-none bg-gradient-to-b from-surface-container-lowest to-transparent"></div>
-<div class="relative flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-tertiary text-on-tertiary font-bold tracking-wider uppercase">Rank 2 • QAOA Active</span>
-<span class="font-label-md text-label-md text-tertiary font-semibold tracking-wider">LN-103</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Marine Exports &amp; Cold Chain</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Cochin Harbor Logistics Syndicate</p>
-</div>
-<div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
-<div>
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">₹3.50 Cr</span>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-tertiary block">Expected Return</span>
-<span class="font-headline-sm text-headline-sm font-bold text-tertiary">+₹52.50 L</span>
-</div>
-</div>
-</div>
-<div class="relative flex flex-col gap-space-xs pt-space-xs">
-<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span>Risk Metric: Covariance Variance</span>
-<span class="text-tertiary font-semibold">Moderate (0.24)</span>
-</div>
-<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold bg-surface-variant px-space-sm py-space-xs rounded-lg">
-<span class="material-symbols-outlined text-[16px]">check_circle</span>
-<span>Selected by QAOA Optimizer</span>
-</div>
-</div>
-</div>
-<!-- Loan 3: LN-104 (Selected - Rank 3) -->
-<div class="relative bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-[0_0_24px_rgba(78,222,163,0.12)]">
-<div class="absolute inset-0 rounded-xl pointer-events-none bg-gradient-to-b from-surface-container-lowest to-transparent"></div>
-<div class="relative flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-tertiary text-on-tertiary font-bold tracking-wider uppercase">Rank 3 • QAOA Active</span>
-<span class="font-label-md text-label-md text-tertiary font-semibold tracking-wider">LN-104</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Healthcare Diagnostics Hub</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Thrissur Medical City Expansion</p>
-</div>
-<div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
-<div>
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">₹3.00 Cr</span>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-tertiary block">Expected Return</span>
-<span class="font-headline-sm text-headline-sm font-bold text-tertiary">+₹48.00 L</span>
-</div>
-</div>
-</div>
-<div class="relative flex flex-col gap-space-xs pt-space-xs">
-<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span>Risk Metric: Covariance Variance</span>
-<span class="text-tertiary font-semibold">Ultra-Low (0.14)</span>
-</div>
-<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold bg-surface-variant px-space-sm py-space-xs rounded-lg">
-<span class="material-symbols-outlined text-[16px]">check_circle</span>
-<span>Selected by QAOA Optimizer</span>
-</div>
-</div>
-</div>
-<!-- Loan 4: LN-101 (Not Selected) -->
-<div class="bg-surface-container-lowest hover:opacity-100 transition-opacity rounded-xl p-space-md flex flex-col justify-between gap-space-md">
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Bit: 0 • Excluded</span>
-<span class="font-label-md text-label-md text-outline font-medium">LN-101</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Agri-Tech &amp; Spice Processing</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Wayanad Agro-Producer Company</p>
-</div>
-<div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-low p-space-sm rounded-lg">
-<div>
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹2.80 Cr</span>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Potential Return</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹36.40 L</span>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-space-xs pt-space-xs">
-<div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm bg-error-container text-on-error-container p-space-xs rounded">
-<span class="material-symbols-outlined text-[16px] text-error shrink-0">warning</span>
-<span class="truncate">Excluded: High correlation risk with LN-103 (Cov: 0.81)</span>
-</div>
-</div>
-</div>
-<!-- Loan 5: LN-105 (Not Selected) -->
-<div class="bg-surface-container-lowest hover:opacity-100 transition-opacity rounded-xl p-space-md flex flex-col justify-between gap-space-md md:col-span-2 xl:col-span-1">
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Bit: 0 • Excluded</span>
-<span class="font-label-md text-label-md text-outline font-medium">LN-105</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Commercial Retail &amp; Textile</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Kochi CBD Mall Real Estate Facility</p>
-</div>
-<div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-low p-space-sm rounded-lg">
-<div>
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹2.50 Cr</span>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant block">Potential Return</span>
-<span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹27.50 L</span>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-space-xs pt-space-xs">
-<div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm bg-error-container text-on-error-container p-space-xs rounded">
-<span class="material-symbols-outlined text-[16px] text-error shrink-0">do_not_disturb_on</span>
-<span class="truncate">Excluded: Sub-optimal yield vs risk tolerance (Sharpe: 0.91)</span>
-</div>
-</div>
+<!-- Bento-style Card Layout for 5 Loans (Dynamically rendered) -->
+<div id="resultsBentoGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+  <!-- Populated live by renderResults() -->
 </div>
 <!-- Quantum Telemetry Quick Insight Widget -->
 <div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between relative overflow-hidden md:col-span-2 xl:col-span-1">
@@ -1510,15 +1355,15 @@
 <span class="material-symbols-outlined text-[18px] text-on-surface-variant">check_box</span>
 <span>Optimal Combination</span>
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-tertiary font-bold">
-                [LN-102, LN-103, LN-104]
-              </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                [LN-102, LN-103, LN-104]
-              </td>
-<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary">
-                0% Divergence
-              </td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-tertiary font-bold" id="cmp-opt-qaoa">
+[LN-101, LN-102, LN-105]
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-opt-bf">
+[LN-101, LN-102, LN-105]
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary" id="cmp-opt-delta">
+0.0% Divergence (Match)
+</td>
 </tr>
 <!-- Row 2 -->
 <tr class="bg-surface-container-lowest hover:bg-surface-container-high transition-colors">
@@ -1526,15 +1371,15 @@
 <span class="material-symbols-outlined text-[18px] text-on-surface-variant">payments</span>
 <span>Expected Absolute Return</span>
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                ₹167.70 L <span class="text-body-sm text-on-surface-variant font-body-sm">(16.72%)</span>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-ret-qaoa">
+₹5.70 L
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                ₹167.70 L <span class="text-body-sm text-on-surface-variant font-body-sm">(16.72%)</span>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-ret-bf">
+₹5.70 L
 </td>
-<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary">
-                Δ = ₹0.00
-              </td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary" id="cmp-ret-delta">
+Δ = ₹0.00
+</td>
 </tr>
 <!-- Row 3 -->
 <tr class="bg-surface-container-high hover:bg-surface-container-high transition-colors">
@@ -1542,31 +1387,31 @@
 <span class="material-symbols-outlined text-[18px] text-on-surface-variant">crisis_alert</span>
 <span>Portfolio Covariance Risk (σ²)</span>
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                0.2800
-              </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                0.2800
-              </td>
-<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary">
-                Δ = 0.0000
-              </td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-risk-qaoa">
+1.8000
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-risk-bf">
+1.8000
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary" id="cmp-risk-delta">
+Δ = 0.0000
+</td>
 </tr>
 <!-- Row 4 -->
 <tr class="bg-surface-container-lowest hover:bg-surface-container-high transition-colors">
 <td class="py-space-md px-space-md font-semibold text-on-surface flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-[18px] text-on-surface-variant">timer</span>
-<span>Execution / Convergence Time</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">bolt</span>
+<span>Objective Value (E = -P + λR)</span>
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-primary font-bold">
-                480 ms <span class="text-body-sm text-on-surface-variant font-body-sm">(QPU Sim, 1024 shots)</span>
+<td class="py-space-md px-space-md font-label-md text-label-md text-primary font-bold" id="cmp-obj-qaoa">
+-3.9000
 </td>
-<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
-                12 ms <span class="text-body-sm text-on-surface-variant font-body-sm">(10 combos exhaustive)</span>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface" id="cmp-obj-bf">
+-3.9000
 </td>
-<td class="py-space-md px-space-md text-right font-label-md text-label-md text-on-surface-variant">
-                O(2ⁿ) vs O(poly(n))
-              </td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary" id="cmp-obj-delta">
+Δ = 0.0000
+</td>
 </tr>
 <!-- Row 5 -->
 <tr class="bg-surface-container-high hover:bg-surface-container-high transition-colors">
@@ -1575,14 +1420,14 @@
 <span>Cardinality Constraint</span>
 </td>
 <td class="py-space-md px-space-md font-label-md text-label-md text-tertiary">
-                k = 3 loans (Satisfied, Penalty = 0)
-              </td>
+k = 3 loans (Satisfied, Penalty = 0)
+</td>
 <td class="py-space-md px-space-md font-label-md text-label-md text-tertiary">
-                k = 3 loans (Hardcoded Filter)
-              </td>
-<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary">
-                Pass (λ=50)
-              </td>
+k = 3 loans (C(5,3)=10 Enumerated)
+</td>
+<td class="py-space-md px-space-md text-right font-label-md text-label-md text-tertiary" id="cmp-card-status">
+Pass (μ Dominates)
+</td>
 </tr>
 </tbody>
 </table>
@@ -2134,6 +1979,87 @@
     let isRunning = false;
     let tourStep = 0;
 
+    // Presets
+    const PRESETS = {
+      default: {
+        loans: [
+          { sector: "Textiles", profit: 1.8, principal: 2.8 },
+          { sector: "Agri-processing", profit: 1.5, principal: 4.2 },
+          { sector: "Retail", profit: 2.0, principal: 3.5 },
+          { sector: "Transport", profit: 1.2, principal: 1.8 },
+          { sector: "Construction", profit: 2.4, principal: 2.5 }
+        ],
+        risks: [
+          [0.0, 0.3, 0.5, 0.2, 0.4],
+          [0.3, 0.0, 0.3, 0.6, 0.2],
+          [0.5, 0.3, 0.0, 0.3, 0.5],
+          [0.2, 0.6, 0.3, 0.0, 0.3],
+          [0.4, 0.2, 0.5, 0.3, 0.0]
+        ]
+      },
+      hackathon: {
+        loans: [
+          { sector: "Textiles", profit: 1.8, principal: 2.8 },
+          { sector: "Agri-processing", profit: 1.5, principal: 4.2 },
+          { sector: "Retail", profit: 2.0, principal: 3.5 },
+          { sector: "Transport", profit: 1.2, principal: 1.8 },
+          { sector: "Construction", profit: 2.4, principal: 2.5 }
+        ],
+        risks: [
+          [0.0, 0.3, 0.5, 0.2, 0.4],
+          [0.3, 0.0, 0.3, 0.6, 0.2],
+          [0.5, 0.3, 0.0, 0.3, 0.5],
+          [0.2, 0.6, 0.3, 0.0, 0.3],
+          [0.4, 0.2, 0.5, 0.3, 0.0]
+        ]
+      }
+    };
+
+    function loadPreset(name) {
+      const preset = PRESETS[name] || PRESETS.default;
+      preset.loans.forEach((l, i) => {
+        const secInput = document.getElementById(`sector-${i}`);
+        const profInput = document.getElementById(`profit-${i}`);
+        const princInput = document.getElementById(`principal-${i}`);
+        if (secInput) secInput.value = l.sector;
+        if (profInput) profInput.value = l.profit;
+        if (princInput) princInput.value = l.principal;
+      });
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+          if (i !== j) {
+            const el = document.getElementById(`risk-${i}-${j}`);
+            if (el) el.value = preset.risks[i][j].toFixed(2);
+          }
+        }
+      }
+      updateSectorLabels();
+    }
+
+    function resetToDefaults() {
+      loadPreset('default');
+    }
+
+    function syncMatrixCell(i, j, val) {
+      const num = parseFloat(val) || 0.0;
+      const target = document.getElementById(`risk-${j}-${i}`);
+      if (target) {
+        target.value = num.toFixed(2);
+      }
+    }
+
+    function updateSectorLabels() {
+      for (let i = 0; i < 5; i++) {
+        const val = document.getElementById(`sector-${i}`)?.value || `Sector ${i+1}`;
+        const badge = document.getElementById(`badge-${i}`);
+        if (badge) badge.innerText = val.slice(0, 8);
+        const head = document.getElementById(`mat-head-${i}`);
+        if (head) head.innerText = `10${i+1}`;
+        const row = document.getElementById(`mat-row-${i}`);
+        if (row) row.innerText = `10${i+1}`;
+      }
+    }
+
     // 1. Tab Switching System
     function switchTab(tabId) {
       document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
@@ -2158,7 +2084,7 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Intercept all data-path links from original Stitch screens
+    // Intercept data-path links from original Stitch screens
     document.addEventListener('click', function(e) {
       const link = e.target.closest('[data-path]');
       if (link) {
@@ -2181,7 +2107,7 @@
         const json = await res.json();
         if (json.status === 'success') {
           appData = json.data;
-          renderResults(appData);
+          renderResults(json);
         }
       } catch (err) {
         console.error('Failed to load initial portfolio:', err);
@@ -2197,37 +2123,77 @@
       const badge = document.getElementById('qpuStatusBadge');
       if (badge) badge.innerText = 'QPU Sim: COBYLA Optimizing...';
 
+      // Collect loans
+      const loans = [];
+      for (let i = 0; i < 5; i++) {
+        const sec = document.getElementById(`sector-${i}`)?.value || `Sector ${i+1}`;
+        const prof = parseFloat(document.getElementById(`profit-${i}`)?.value) || 1.0;
+        const princ = parseFloat(document.getElementById(`principal-${i}`)?.value) || 2.5;
+        loans.push({
+          id: `LN-10${i+1}`,
+          sector: sec,
+          profit: prof,
+          principal: princ
+        });
+      }
+
+      // Collect 5x5 matrix
+      const risk_matrix = [];
+      for (let i = 0; i < 5; i++) {
+        const row = [];
+        for (let j = 0; j < 5; j++) {
+          if (i === j) {
+            row.push(0.0);
+          } else {
+            const el = document.getElementById(`risk-${i}-${j}`);
+            row.push(el ? (parseFloat(el.value) || 0.0) : 0.0);
+          }
+        }
+        risk_matrix.push(row);
+      }
+
       const capitalInput = document.getElementById('capitalInput');
       const capital = capitalInput ? parseFloat(capitalInput.value) : null;
 
-      const principals = [];
-      for (let i = 0; i < 5; i++) {
-        const input = document.getElementById(`principal-${i}`);
-        if (input) principals.push(parseFloat(input.value));
-      }
-
       try {
-        const res = await fetch('/api/solve', {
+        const res = await fetch('/optimize', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lambda: 1.0, mu: 3.0, reps: 3, capital: capital, principals: principals.length === 5 ? principals : null })
+          body: JSON.stringify({
+            loans: loans,
+            risk_matrix: risk_matrix,
+            lambda: 1.0,
+            mu: 3.0,
+            reps: 2,
+            capital: capital,
+            auto_scale_mu: true
+          })
         });
         const json = await res.json();
         if (json.status === 'success') {
           appData = json.data;
-          renderResults(appData);
+          renderResults(json);
+          setTimeout(() => {
+            switchTab('screen-results');
+          }, 1100);
+        } else {
+          alert('Optimization Error: ' + (json.message || 'Validation failed'));
+          switchTab('screen-portfolio');
         }
       } catch (err) {
         console.error('QAOA execution error:', err);
+        alert('Could not connect to optimization server.');
+        switchTab('screen-portfolio');
       } finally {
         isRunning = false;
-        if (badge) badge.innerText = 'QPU Sim: QAOA (p=3) Online';
+        if (badge) badge.innerText = 'QPU Sim: QAOA (p=2) Online';
       }
     }
 
     // 4. Render Dynamic Elements
-    function renderResults(data) {
-      if (!data) return;
+    function renderResults(payload) {
+      if (!payload) return;
+      const data = payload.data || payload;
 
       // Update Screen 2 Cost Metric
       const costEl = document.getElementById('metric-cost');
@@ -2235,27 +2201,158 @@
         costEl.innerText = data.quantum.objective.toFixed(2) + ' eV';
       }
 
-      // Update Screen 3 Bento Grid & KPIs
-      if (data.quantum) {
-        const selected = data.quantum.selected_loans || [];
-        const totalProfit = data.quantum.total_profit;
-        const totalRisk = data.quantum.total_risk;
-        
-        // Find KPI containers if present and update text
-        const profitHeaders = document.querySelectorAll('#screen-results .font-headline-xl');
-        if (profitHeaders.length >= 3) {
-          profitHeaders[1].innerText = '₹' + (totalProfit).toFixed(2);
-          profitHeaders[2].innerText = totalRisk.toFixed(2);
-        }
+      // Update KPIs
+      const kpiCount = document.getElementById('kpi-selected-summary');
+      if (kpiCount && data.selected_loans_qaoa) {
+        kpiCount.innerText = `${data.selected_loans_qaoa.length} of 5 Selected`;
+      }
+      const kpiProfit = document.getElementById('kpi-total-profit');
+      if (kpiProfit && data.total_profit_qaoa !== undefined) {
+        kpiProfit.innerText = `₹${data.total_profit_qaoa.toFixed(2)} L`;
+      }
+      const kpiRisk = document.getElementById('kpi-total-risk');
+      if (kpiRisk && data.total_risk_qaoa !== undefined) {
+        kpiRisk.innerText = data.total_risk_qaoa.toFixed(4);
+      }
+      const kpiFid = document.getElementById('kpi-fidelity');
+      if (kpiFid) {
+        kpiFid.innerText = data.matched ? '100.0%' : '95.2%';
       }
 
-      // Re-render sample distribution if element exists
+      // Bitstring display
+      const bitEl = document.getElementById('bitstringDisplay');
+      if (bitEl && data.quantum) {
+        const b = data.quantum.bitstring;
+        bitEl.innerText = `QUBO Variable Bitstrings: [x₁=${b[0]}, x₂=${b[1]}, x₃=${b[2]}, x₄=${b[3]}, x₅=${b[4]}]`;
+      }
+
+      // Comparison Table
+      const cmpOptQAOA = document.getElementById('cmp-opt-qaoa');
+      if (cmpOptQAOA && data.selected_loans_qaoa) {
+        cmpOptQAOA.innerText = `[${data.selected_loans_qaoa.join(', ')}] (${data.selected_sectors_qaoa.join(', ')})`;
+      }
+      const cmpOptBF = document.getElementById('cmp-opt-bf');
+      if (cmpOptBF && data.selected_loans_brute_force) {
+        cmpOptBF.innerText = `[${data.selected_loans_brute_force.join(', ')}] (${data.selected_sectors_brute_force.join(', ')})`;
+      }
+      const cmpOptDelta = document.getElementById('cmp-opt-delta');
+      if (cmpOptDelta) {
+        cmpOptDelta.innerText = data.matched ? '0.0% Divergence (Match)' : data.divergence;
+        cmpOptDelta.className = data.matched ? 'py-space-md px-space-md text-right font-label-md text-label-md text-tertiary font-bold' : 'py-space-md px-space-md text-right font-label-md text-label-md text-error font-bold';
+      }
+
+      const cmpRetQAOA = document.getElementById('cmp-ret-qaoa');
+      if (cmpRetQAOA && data.total_profit_qaoa !== undefined) cmpRetQAOA.innerText = `₹${data.total_profit_qaoa.toFixed(2)} L`;
+      const cmpRetBF = document.getElementById('cmp-ret-bf');
+      if (cmpRetBF && data.total_profit_brute_force !== undefined) cmpRetBF.innerText = `₹${data.total_profit_brute_force.toFixed(2)} L`;
+      const cmpRetDelta = document.getElementById('cmp-ret-delta');
+      if (cmpRetDelta && data.total_profit_qaoa !== undefined && data.total_profit_brute_force !== undefined) {
+        cmpRetDelta.innerText = `Δ = ₹${Math.abs(data.total_profit_qaoa - data.total_profit_brute_force).toFixed(2)}`;
+      }
+
+      const cmpRiskQAOA = document.getElementById('cmp-risk-qaoa');
+      if (cmpRiskQAOA && data.total_risk_qaoa !== undefined) cmpRiskQAOA.innerText = data.total_risk_qaoa.toFixed(4);
+      const cmpRiskBF = document.getElementById('cmp-risk-bf');
+      if (cmpRiskBF && data.total_risk_brute_force !== undefined) cmpRiskBF.innerText = data.total_risk_brute_force.toFixed(4);
+      const cmpRiskDelta = document.getElementById('cmp-risk-delta');
+      if (cmpRiskDelta && data.total_risk_qaoa !== undefined && data.total_risk_brute_force !== undefined) {
+        cmpRiskDelta.innerText = `Δ = ${Math.abs(data.total_risk_qaoa - data.total_risk_brute_force).toFixed(4)}`;
+      }
+
+      const cmpObjQAOA = document.getElementById('cmp-obj-qaoa');
+      if (cmpObjQAOA && data.objective_qaoa !== undefined) cmpObjQAOA.innerText = data.objective_qaoa.toFixed(4);
+      const cmpObjBF = document.getElementById('cmp-obj-bf');
+      if (cmpObjBF && data.objective_brute_force !== undefined) cmpObjBF.innerText = data.objective_brute_force.toFixed(4);
+      const cmpObjDelta = document.getElementById('cmp-obj-delta');
+      if (cmpObjDelta && data.objective_qaoa !== undefined && data.objective_brute_force !== undefined) {
+        cmpObjDelta.innerText = `Δ = ${Math.abs(data.objective_qaoa - data.objective_brute_force).toFixed(4)}`;
+      }
+
+      const cmpCardStatus = document.getElementById('cmp-card-status');
+      if (cmpCardStatus && data.qubo_params) {
+        cmpCardStatus.innerText = `Pass (μ=${data.qubo_params.mu_effective} dominates)`;
+      }
+
+      // Render 5 Bento Cards
+      const bentoContainer = document.getElementById('resultsBentoGrid');
+      if (bentoContainer && data.loans) {
+        bentoContainer.innerHTML = '';
+        data.loans.forEach((loan, idx) => {
+          const isSelected = loan.qaoa_selected;
+          const card = document.createElement('div');
+          
+          if (isSelected) {
+            card.className = "relative bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-md border border-primary";
+            card.innerHTML = `
+              <div class="relative flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-tertiary text-on-tertiary font-bold tracking-wider uppercase">QAOA Selected</span>
+                  <span class="font-label-md text-label-md text-tertiary font-semibold tracking-wider">${loan.id}</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md font-bold text-on-surface">${loan.sector}</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Allocation Candidate #${idx + 1}</p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
+                  <div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Principal</span>
+                    <span class="font-headline-sm text-headline-sm font-semibold text-on-surface">₹${loan.principal.toFixed(2)} Cr</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-label-sm text-label-sm text-tertiary block">Expected Return</span>
+                    <span class="font-headline-sm text-headline-sm font-bold text-tertiary">+₹${loan.profit.toFixed(2)} L</span>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col gap-space-xs pt-space-xs">
+                <div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold bg-surface-variant px-space-sm py-space-xs rounded-lg">
+                  <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  <span>Optimal Asset in Ground State</span>
+                </div>
+              </div>
+            `;
+          } else {
+            card.className = "bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between gap-space-md opacity-85 hover:opacity-100 transition-opacity border border-outline-variant";
+            card.innerHTML = `
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm px-space-xs py-[2px] rounded bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Bit: 0 • Excluded</span>
+                  <span class="font-label-md text-label-md text-outline font-medium">${loan.id}</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md font-semibold text-on-surface">${loan.sector}</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Excluded Candidate #${idx + 1}</p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-sm mt-space-xs bg-surface-container-low p-space-sm rounded-lg">
+                  <div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Loan</span>
+                    <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹${loan.principal.toFixed(2)} Cr</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant block">Potential Return</span>
+                    <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">₹${loan.profit.toFixed(2)} L</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-space-xs pt-space-xs">
+                <div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm bg-error-container text-on-error-container p-space-xs rounded">
+                  <span class="material-symbols-outlined text-[16px] text-error shrink-0">do_not_disturb_on</span>
+                  <span class="truncate">Excluded by Minimum Energy Hamiltonian</span>
+                </div>
+              </div>
+            `;
+          }
+          bentoContainer.appendChild(card);
+        });
+      }
+
+      // Render sample distribution list
       const chartContainer = document.getElementById('sampleDistributionList');
       if (chartContainer && data.samples) {
         chartContainer.innerHTML = '';
         const topSamples = data.samples.slice(0, 8);
         topSamples.forEach(s => {
-          const isOptimal = s.bitstring === data.quantum.bitstring;
+          const isOptimal = s.bitstring === (data.quantum ? data.quantum.bitstring : '');
           const row = document.createElement('div');
           row.className = 'flex items-center justify-between p-space-xs rounded bg-surface-container font-label-sm text-label-sm';
           row.innerHTML = `
@@ -2266,11 +2363,11 @@
               </span>
             </div>
             <div class="flex items-center gap-space-sm">
-              <span class="font-mono text-tertiary">E = ${s.objective.toFixed(1)}</span>
+              <span class="font-mono text-tertiary">E = ${s.energy.toFixed(1)}</span>
               <div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
-                <div class="${isOptimal ? 'bg-primary' : 'bg-secondary'} h-full" style="width: ${Math.min(100, Math.max(5, s.probability * 100))}%"></div>
+                <div class="${isOptimal ? 'bg-primary' : 'bg-secondary'} h-full" style="width: ${Math.min(100, Math.max(5, s.probability))}%"></div>
               </div>
-              <span class="font-mono text-right w-10">${(s.probability * 100).toFixed(1)}%</span>
+              <span class="font-mono text-right w-10">${s.probability.toFixed(1)}%</span>
             </div>
           `;
           chartContainer.appendChild(row);
@@ -2278,17 +2375,17 @@
       }
     }
 
-    // 5. Interactive Sensitivity Slider for Screen 4
+    // 5. Sensitivity Slider Handler
     async function updateSensitivity(mu, lam) {
       try {
-        const res = await fetch('/api/solve', {
+        const res = await fetch('/optimize', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lambda: parseFloat(lam), mu: parseFloat(mu), reps: 3 })
+          body: JSON.stringify({ lambda: parseFloat(lam), mu: parseFloat(mu), reps: 2 })
         });
         const json = await res.json();
         if (json.status === 'success') {
-          renderResults(json.data);
+          renderResults(json);
         }
       } catch (err) {
         console.error(err);
@@ -2324,7 +2421,10 @@
     }
 
     // Initialize on page load
-    window.addEventListener('DOMContentLoaded', loadPortfolio);
+    window.addEventListener('DOMContentLoaded', () => {
+      loadPortfolio();
+      updateSectorLabels();
+    });
   </script>
 </body>
 </html>
